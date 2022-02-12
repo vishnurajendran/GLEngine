@@ -1,0 +1,50 @@
+
+<SECTION Engine Init>
+
+|13-02-2022 03:32:14| INFO:::Initialising GLFW
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 20 ) ]
+|13-02-2022 03:32:14| INFO:::Creating Window for Basic Example
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 27 ) ]
+|13-02-2022 03:32:14| INFO:::Loading GLAD
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 63 ) ]
+|13-02-2022 03:32:14| INFO:::Enigne Ready
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 77 ) ]
+
+</SECTION Engine Init>
+
+
+<SECTION  Runtime >
+
+|13-02-2022 03:32:14| LOG:::Flappy clone started
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngineSandbox\src\BasicExample.cpp ( Line 32 ) ]
+|13-02-2022 03:32:14| LOG:::Added BG_Tex
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\ResourceManager.cpp ( Line 30 ) ]
+|13-02-2022 03:32:14| LOG:::Added Bird_Tex
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\ResourceManager.cpp ( Line 30 ) ]
+|13-02-2022 03:32:14| WARNING::def_sprite_shader exists in cache already. skipping shader generation
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\ResourceManager.cpp ( Line 42 ) ]
+|13-02-2022 03:32:14| LOG:::Example Started
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngineSandbox\src\BasicExample.cpp ( Line 6 ) ]
+|13-02-2022 03:32:14| LOG:::Bird
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngineSandbox\src\BasicExample.cpp ( Line 9 ) ]
+|13-02-2022 03:32:18| LOG:::Quiting Game
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngineSandbox\src\BasicExample.cpp ( Line 63 ) ]
+
+</SECTION  Runtime >
+
+
+<SECTION  Engine Cleanup >
+
+|13-02-2022 03:32:18| INFO:::Enigne Shutdown initiated
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 103 ) ]
+|13-02-2022 03:32:18| INFO:::Cleaning up game objects
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Core\GameObject.cpp ( Line 79 ) ]
+|13-02-2022 03:32:18| LOG:::Example Destroyed
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngineSandbox\src\BasicExample.cpp ( Line 24 ) ]
+|13-02-2022 03:32:18| INFO:::Cleanded All Resources Caches
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\ResourceManager.cpp ( Line 146 ) ]
+|13-02-2022 03:32:18| INFO:::Enigne Shutting down
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 108 ) ]
+
+</SECTION  Engine Cleanup >
+

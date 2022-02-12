@@ -1,0 +1,1656 @@
+
+<SECTION Engine Init>
+
+|13-02-2022 03:05:09| INFO:::Initialising GLFW
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 20 ) ]
+|13-02-2022 03:05:09| INFO:::Creating Window for Basic Example
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 27 ) ]
+|13-02-2022 03:05:10| INFO:::Loading GLAD
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 63 ) ]
+|13-02-2022 03:05:10| INFO:::Enigne Ready
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 77 ) ]
+
+</SECTION Engine Init>
+
+
+<SECTION  Runtime >
+
+|13-02-2022 03:05:10| LOG:::Creating BasicExampleGame
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngineSandbox\src\BasicExample.cpp ( Line 70 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Start
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 6 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:10| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:10| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:11| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:11| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:12| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:12| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:13| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:13| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:13| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:13| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:13| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:13| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:13| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:13| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:13| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:13| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:13| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:13| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:13| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:13| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:13| WARNING::No active cameras detected
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 93 ) ]
+|13-02-2022 03:05:13| LOG:::Empty Game Loop
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 10 ) ]
+|13-02-2022 03:05:13| LOG:::Empty Game Exit
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Game.cpp ( Line 14 ) ]
+
+</SECTION  Runtime >
+
+
+<SECTION  Engine Cleanup >
+
+|13-02-2022 03:05:13| INFO:::Enigne Shutdown initiated
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 103 ) ]
+|13-02-2022 03:05:13| INFO:::Cleaning up game objects
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Core\GameObject.cpp ( Line 79 ) ]
+|13-02-2022 03:05:13| INFO:::Cleanded All Resources Caches
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\ResourceManager.cpp ( Line 146 ) ]
+|13-02-2022 03:05:13| INFO:::Enigne Shutting down
+[C:\Users\ssj5v\source\repos\GLEngine\GLEngine\src\GLEngine\Engine.cpp ( Line 108 ) ]
+
+</SECTION  Engine Cleanup >
+
