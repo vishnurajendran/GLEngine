@@ -6,4 +6,4 @@
 https://learnopengl.com/
 
 # Current Progress
-![Alt Text](https://media.giphy.com/media/RE44vZQZA5IGCrspjk/giphy.gif)
+![Alt Text](https://media.giphy.com/media/yixoj2U0RnIdgZW1ig/giphy.gif)
