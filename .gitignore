@@ -1,0 +1,5 @@
+*.log
+/Bin
+/Bin-int
+/GLEngine/x64
+/GLEngineSandbox/x64

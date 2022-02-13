@@ -4,6 +4,9 @@
 #include <sstream>
 
 namespace GLengine {
+
+    const std::string DEF_PREFS = "Width = 1920,\nHeight = 1080,\nFramerate = 0,\nFullscreen = 1";
+
     bool Preferences::isInitialised = false;
     std::map<std::string, std::string> Preferences::prefMap;
 
@@ -47,11 +50,14 @@ namespace GLengine {
         isInitialised = true;
         std::string data = "";
         char* datChar = ReadTextFile("Prefs.prf");
+        
         if (datChar == NULL) {
-            WriteTextFile("Prefs.prf", "");
-            return;
+            WriteTextFile("Prefs.prf", DEF_PREFS.c_str());
+            data = DEF_PREFS.c_str();
         }
-        data = datChar;
+        else
+            data = datChar;
+
         std::string prop = "";
         for (auto x : data) {
 
