@@ -1,6 +1,7 @@
 #include "GLEngine/Core/Component.h"
 #include "GLEngine/Core/GameObject.h"
 #include "GLEngine/Debugging.h"
+#include "GLEngine/Physics2D/Collision.h"
 
 namespace GLengine {
 	IComponent::IComponent() {
@@ -32,6 +33,10 @@ namespace GLengine {
 	}
 
 	void IComponent::OnDestroy() {
+		//default no op
+	}
+
+	void IComponent::OnCollide(Collision2D* col) {
 		//default no op
 	}
 }

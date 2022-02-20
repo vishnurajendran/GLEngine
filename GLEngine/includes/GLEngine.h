@@ -22,6 +22,10 @@
 #include "GLEngine/Core/System.h"
 #include "GLEngine/2D.h"
 
+//Physics2D
+#include "GLEngine/Physics2D/Collider2D.h"
+#include "GLEngine/Physics2D/Collision.h"
+
 //Engine app include
 #include "GLEngine/Game.h"
 

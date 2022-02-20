@@ -21,13 +21,13 @@ namespace GLengine {
 	void ResourceManager::CreateTexture2D(std::string name, std::string path, int reqComp, TextureFormat texFormat, TextureWrap wrap, int texOrder) {
 
 		if (textures.find(name) != textures.end()) {
-			LogWarning((name + std::string(" exists in cache already. skipping texture generation")).c_str());
+			LogWarning((std::string("[ Resource Manager ] ") + name + std::string(" exists in cache already. skipping texture generation")).c_str());
 			return;
 		}
 
 		textures.insert({ name, new Texture2D(path.c_str(), reqComp, texFormat, wrap, texOrder) });
 		textureKeys.push_back(name);
-		Log(("Added " + name).c_str());
+		Log( ("[ Resource Manager ] Added " + name).c_str());
 	}
 
 	std::string ResourceManager::CreateTexture2D(std::string path, int reqComp, TextureFormat texFormat, TextureWrap wrap, int texOrder) {
@@ -39,7 +39,7 @@ namespace GLengine {
 	void ResourceManager::CreateShader(std::string name, std::string vertShaderPath, std::string fragShaderPath) {
 
 		if (shaders.find(name) != shaders.end()) {
-			LogWarning((name + std::string(" exists in cache already. skipping shader generation")).c_str());
+			LogWarning((std::string("[ Resource Manager ] ") + name + std::string(" exists in cache already. skipping shader generation")).c_str());
 			return;
 		}
 
@@ -57,7 +57,7 @@ namespace GLengine {
 	void ResourceManager::CreateMaterial(std::string name, Shader* shader, Texture2D textures[], int lenOfTex) {
 
 		if (materials.find(name) != materials.end()) {
-			LogWarning((name + std::string(" exists in cache already. skipping material generation")).c_str());
+			LogWarning((std::string("[ Resource Manager ] ") + name + std::string(" exists in cache already. skipping material generation")).c_str());
 			return;
 		}
 
@@ -143,7 +143,7 @@ namespace GLengine {
 		materials.clear();
 		materialKeys.clear();
 
-		LogInfo("Cleanded All Resources Caches");
+		LogInfo("[ Resource Manager ] Cleaned All Resources Cache");
 	}
 
 #pragma endregion

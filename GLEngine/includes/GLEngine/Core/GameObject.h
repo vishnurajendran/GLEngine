@@ -4,6 +4,7 @@
 
 #include "Core.h"
 #include "Transform.h"
+#include <GLEngine/Physics2D/Collision.h>
 
 namespace GLengine {
 #ifndef GAMEOBJECT
@@ -23,6 +24,7 @@ namespace GLengine {
 		int GetID();
 		void AttachComponent(IComponent* component);
 		void UpdateGameObject();
+		void SendOnCollideEventToComponents(Collision2D* col);
 		void Destroy();
 
 		template <typename T>

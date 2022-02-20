@@ -1,4 +1,7 @@
 *.log
+*.html
+/.vs/GLEngine
+/GLEngineSandbox/Logs
 /Bin
 /Bin-int
 /GLEngine/x64

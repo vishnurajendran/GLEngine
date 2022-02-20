@@ -1,4 +1,4 @@
-Width = 1920,
-Height = 1080,
+Width = 800,
+Height = 600,
 Framerate = 0,
-Fullscreen = 1
+Fullscreen = 0

@@ -30,6 +30,12 @@ namespace GLengine {
 		}
 	}
 
+	void GameObject::SendOnCollideEventToComponents(Collision2D* col) {
+		for (IComponent* compoenent : attachedComponents) {
+			compoenent->OnCollide(col);
+		}
+	}
+
 	void GameObject::Destroy() {
 		for (IComponent* compoenent : attachedComponents) {
 			compoenent->OnDestroy();
@@ -76,7 +82,7 @@ namespace GLengine {
 	}
 
 	void GameObjectManager::Cleanup() {
-		LogInfo("Cleaning up game objects");
+		LogInfo("[ GameObject Manager ] Cleaning up game objects");
 		for (GameObject* gameObject : gameObjects) {
 			gameObject->Destroy();
 		}

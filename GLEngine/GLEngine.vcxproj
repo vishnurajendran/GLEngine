@@ -101,6 +101,8 @@
     <ClInclude Include="includes\GLEngine\Game.h" />
     <ClInclude Include="includes\GLEngine\HelperDefinitions.h" />
     <ClInclude Include="includes\GLEngine\InputHandling.h" />
+    <ClInclude Include="includes\GLEngine\Physics2D\Collider2D.h" />
+    <ClInclude Include="includes\GLEngine\Physics2D\Collision.h" />
     <ClInclude Include="includes\GLEngine\Rendering.h" />
     <ClInclude Include="includes\GLEngine\ResourceManager.h" />
     <ClInclude Include="includes\GLFW\glfw3.h" />
@@ -509,6 +511,8 @@
     <ClCompile Include="src\GLEngine\FileHandling.cpp" />
     <ClCompile Include="src\GLEngine\Game.cpp" />
     <ClCompile Include="src\GLEngine\InputHandling.cpp" />
+    <ClCompile Include="src\GLEngine\Physics2D\Collider2D.cpp" />
+    <ClCompile Include="src\GLEngine\Physics2D\Collision.cpp" />
     <ClCompile Include="src\GLEngine\Rendering.cpp" />
     <ClCompile Include="src\GLEngine\ResourceManager.cpp" />
     <ClCompile Include="src\glad.c" />

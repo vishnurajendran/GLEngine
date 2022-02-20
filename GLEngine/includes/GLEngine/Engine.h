@@ -18,12 +18,16 @@
 #include "glm/glm.hpp"
 #include <glm/gtc/matrix_transform.hpp>
 
+//Phsyics2D
+#include "GLEngine/Physics2D/Collision.h"
+
 //other
 #include <string>
 #include "GLEngine/ResourceManager.h"
 #include "GLEngine/InputHandling.h"
 #include "GLEngine/Debugging.h"
 #include "GLEngine/HelperDefinitions.h"
+
 namespace GLengine {
 class GLENGINE_API Engine {
 	GLFWwindow* window;

@@ -9,6 +9,7 @@
 #include <sstream>
 #include <fstream>
 #include <experimental/filesystem>
+#include <regex>
 namespace GLengine {
 #define CONSOLE_BLACK			0
 #define CONSOLE_BLUE			1
@@ -30,10 +31,20 @@ namespace GLengine {
 	namespace fs = std::experimental::filesystem;
 
 	bool Debug::loggerInitialised = false;
+	std::string Debug::applicationName = "GLEngine";
 	std::string Debug::fileName = "";
+	std::string Debug::htmlFileName = "";
 	HANDLE hConsole;
 
 	std::string activeSectionName;
+
+	const std::string HTML_LOG_INIT = "<!DOCTYPE html>\n<html><head><title>{log-title}</title><h1 style=\" font-family:consolas\">{log-name}</h1></head><body style=\"font-family:consolas\">";
+	const std::string HTML_LOG_STRING = "<details style=\"font-family:consolas;font-size:16px\"><summary style=\"cursor:pointer; outline: none;font-family:consolas;font-size:16px\"><code style=\"color:{hex-col};font-family:consolas;font-size:16px\">{log-type}</code>|<code style=\"color:green;font-family:consolas;font-size:16px\"> {log-time} </code> | <code style=\"font-family:consolas;font-size:16px\"> {log-msg} </code> </summary> <a href={script-path} style = \"color : font-family:consolas;font-size:16px\"><code style=\"color:#9900FF;font-family:consolas;font-size:16px\">{script-path} [Line {line-no}]</code></a> </details>";
+	const std::string HTML_LOG_CLOSE = "</body> </html>";
+	const std::string INFO_HEX_COL = "#0091FF";
+	const std::string LOG_HEX_COL = "black";
+	const std::string WARN_HEX_COL = "#FFA500";
+	const std::string ERROR_HEX_COL = "#a6002c";
 
 
 	bool Debug::AppendToTextFile(const char* fileName, const char* textToWrite) {
@@ -65,13 +76,22 @@ namespace GLengine {
 	}
 
 
-	void Debug::StartLogger() {
+	void Debug::StartLogger(std::string appname) {
 		loggerInitialised = true;
-
+		applicationName = appname;
 		if (!DirExists("Logs"))
 			MakeDirectory("Logs");
 
-		fileName = "Logs/" + GetTimeNow() + ".log";
+		if (!DirExists("Logs/Raw"))
+			MakeDirectory("Logs/Raw");
+
+		if (!DirExists("Logs/Web"))
+			MakeDirectory("Logs/Web");
+
+		fileName = "Logs/Raw/" + GetTimeNow() + ".log";
+		htmlFileName =  "Logs/Web/" + GetTimeNow() + ".html";
+		HTMLLogInit();
+
 		hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 		activeSectionName.clear();
 	}
@@ -80,6 +100,7 @@ namespace GLengine {
 		activeSectionName = std::string(name);
 		std::string text = "\n<SECTION " + std::string(name) + ">\n";
 		LogMessage(text, LogType::SECTION_LOG, "\n", false, true);
+		AddToHTMLLog(LogType::SECTION_LOG, name, "na", "na");
 	}
 
 	void Debug::StopSection() {
@@ -90,27 +111,31 @@ namespace GLengine {
 		std::string text = "\n</SECTION " + std::string(activeSectionName) + ">\n";
 		LogMessage(text, LogType::SECTION_LOG, "\n", false, true);
 		activeSectionName.clear();
+		AddToHTMLLog(LogType::SECTION_LOG, " End " + activeSectionName, "na", "na");
 	}
 
 	void Debug::LogInfoData(const char* message, const char* file = "", int line = 0) {
 		std::string text = GetFormatedLogMessage(message, file, line);
 		LogMessage(text, LogType::INFO_LOG, "", true, true);
+		AddToHTMLLog(LogType::INFO_LOG, message, file, std::to_string(line));
 	}
 
 	void Debug::LogData(const char* message, const char* file = "", int line = 0) {
 		std::string text = GetFormatedLogMessage(message, file, line);
 		LogMessage(text, LogType::NORMAL_LOG, "", true, true);
+		AddToHTMLLog(LogType::NORMAL_LOG, message, file, std::to_string(line));
 	}
 
 	void Debug::LogWarningData(const char* message, const char* file = "", int line = 0) {
 		std::string text = GetFormatedLogMessage(message, file, line);
 		LogMessage(text, LogType::WARNING_LOG, "", true, true);
+		AddToHTMLLog(LogType::WARNING_LOG, message, file, std::to_string(line));
 	}
 
 	void Debug::LogErrorData(const char* message, const char* file = "", int line = 0) {
 		std::string text = GetFormatedLogMessage(message, file, line);;
 		LogMessage(text, LogType::ERROR_LOG, "", true, true);
-
+		AddToHTMLLog(LogType::ERROR_LOG, message, file, std::to_string(line));
 	}
 
 	void Debug::LogMessage(std::string msg, LogType type, std::string postMessage, bool prefixTime, bool writeToFile) {
@@ -175,12 +200,83 @@ namespace GLengine {
 		SetConsoleTextAttribute(hConsole, CONSOLE_WHITE);
 	}
 
+	void Debug::HTMLLogInit() {
+		std::string data = HTML_LOG_INIT;
+		std::string titleTag = "{log-title}";
+		std::string headingTag = "{log-name}";
+		std::string title = applicationName + " Log " + GetTimeNow("/",":");
+		data.replace(data.find(titleTag), titleTag.length(), title);
+		data.replace(data.find(headingTag), headingTag.length(), title);
+		AppendToTextFile(htmlFileName.c_str(), data.c_str());
+	}
+
+	void Debug::AddToHTMLLog(LogType logType, std::string msg, std::string file, std::string line) {
+		std::string data = HTML_LOG_STRING;
+		std::string typeTag = "{log-type}";
+		std::string colorTag = "{hex-col}";
+		std::string logTimeTag = "{log-time}";
+		std::string pathTag = "{script-path}";
+		std::string lineTag = "{line-no}";
+		std::string msgTag = "{log-msg}";
+
+		std::string header = "";
+		data.replace(data.find(logTimeTag), logTimeTag.length(), GetTimeNow("/", ":"));
+		
+		data.replace(data.find(pathTag), pathTag.length(), file);
+		data.replace(data.find(pathTag), pathTag.length(), file);
+
+		data.replace(data.find(lineTag), lineTag.length(), line);
+		data.replace(data.find(msgTag), msgTag.length(), msg);
+
+		switch (logType)
+		{
+		case GLengine::Debug::INFO_LOG:
+			data.replace(data.find(typeTag), typeTag.length(), "INFO ");
+			data.replace(data.find(colorTag), colorTag.length(), INFO_HEX_COL);
+			break;
+		case GLengine::Debug::NORMAL_LOG:
+			data.replace(data.find(typeTag), typeTag.length(), "LOG &nbsp");
+			data.replace(data.find(colorTag), colorTag.length(), LOG_HEX_COL);
+			break;
+		case GLengine::Debug::WARNING_LOG:
+			data.replace(data.find(typeTag), typeTag.length(), "WARN ");
+			data.replace(data.find(colorTag), colorTag.length(), WARN_HEX_COL);
+			break;
+		case GLengine::Debug::ERROR_LOG:
+			data.replace(data.find(typeTag), typeTag.length(), "ERROR");
+			data.replace(data.find(colorTag), colorTag.length(), ERROR_HEX_COL);
+			break;
+		case GLengine::Debug::SECTION_LOG:
+			header = "<h3 style=\"color:#FB8FFF\"> SECTION " + msg + "<\h3>";
+			AppendToTextFile(htmlFileName.c_str(), header.c_str());
+			break;
+		case GLengine::Debug::INTERNAL_LOG:
+			AppendToTextFile(htmlFileName.c_str(), "\n");
+			break;
+		default:
+			break;
+		}
+
+		if (logType != INTERNAL_LOG && logType != SECTION_LOG) {
+			AppendToTextFile(htmlFileName.c_str(), data.c_str());
+			AppendToTextFile(htmlFileName.c_str(), "\n");
+		}
+	}
+
+	void Debug::EndHTMLLog() {
+		AppendToTextFile(htmlFileName.c_str(), HTML_LOG_CLOSE.c_str());
+	}
+
 	void Debug::WriteToFile(const char* text) {
 		if (AppendToTextFile(fileName.c_str(), text)) {
 			SetConsoleTextAttribute(hConsole, CONSOLE_DARKGRAY);
 			std::cout << "\t(Written to file " << fileName << ")" << std::endl;
 			SetConsoleTextAttribute(hConsole, CONSOLE_WHITE);
 		}
+	}
+
+	Debug::~Debug() {
+		EndHTMLLog();
 	}
 
 	std::string Debug::GetFormatedLogMessage(const char* message, const char* file, int line) {

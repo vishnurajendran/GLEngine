@@ -1,6 +1,5 @@
 #pragma once
-
-#include "GLEngine/Core/Core.h"
+#include <GLEngine/Core/Core.h>
 #include <string>
 
 namespace GLengine {
@@ -14,7 +13,6 @@ namespace GLengine {
 	};
 
 	//Defined in client
-
 	Game* CreateGame();
 	std::string GetGameName();
 }

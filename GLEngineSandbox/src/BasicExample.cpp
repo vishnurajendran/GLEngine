@@ -8,7 +8,8 @@ void BasicExampleComponent::Start() {
 	GLengine::GameObject* obj = GetGameObject();
 	GLengine::Log(obj->name.c_str());
 	if (obj != NULL) {
-		bg = GetGameObject()->GetAttachedComponent<GLengine::Sprite2D>();
+		bird = GetGameObject()->GetAttachedComponent<GLengine::Sprite2D>();
+		GetGameObject()->AttachComponent(new GLengine::CircleCollider2D(0.1f));
 	}
 	else {
 		GLengine::Log("Sprite2D Component not attached");
@@ -23,6 +24,12 @@ void BasicExampleComponent::Update() {
 void BasicExampleComponent::OnDestroy() {
 	GLengine::Log("Example Destroyed");
 }
+
+void BasicExampleComponent::OnCollide(GLengine::Collision2D* collision)
+{
+	GLengine::Log(("Collision detected between " + collision->thisCollider->GetGameObject()->name + " and " + collision->other->GetGameObject()->name).c_str());
+}
+
 #pragma endregion
 
 #pragma region BasicExampleGame
@@ -43,6 +50,7 @@ void BasicExampleGame::Start() {
 	bgGO->transform.localScale = glm::vec3(2, 1, 1);
 	bgGO->transform.position = glm::vec3(0, 0, 0);
 	bgGO->AttachComponent(bg);
+	bgGO->AttachComponent(new GLengine::BoxCollider2D(glm::vec2(0.1f)));
 
 	//Adding Bird
 	example = new BasicExampleComponent();
@@ -56,7 +64,7 @@ void BasicExampleGame::Start() {
 }
 
 void BasicExampleGame::Loop() {
-		
+
 }
 
 void BasicExampleGame::Exit() {
@@ -65,10 +73,10 @@ void BasicExampleGame::Exit() {
 
 #pragma endregion
 
-
 GLengine::Game* GLengine::CreateGame() {
 	return new BasicExampleGame();
 }
+
 std::string GLengine::GetGameName() {
 	return "Basic Example";
 }

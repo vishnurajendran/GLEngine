@@ -10,11 +10,12 @@ namespace GLengine {
 		glViewport(0, 0, width, height);
 		ApplicationProperties::ScreenHeight = height;
 		ApplicationProperties::ScreenWidth = width;
+		
 	}
 
 	void Engine::Initialise(std::string applicationName, bool fullscreen, int height, int width, int fps) {
 
-		Debug::StartLogger();
+		Debug::StartLogger(applicationName);
 		AddSection("Engine Init");
 
 		LogInfo("Initialising GLFW");
@@ -69,6 +70,7 @@ namespace GLengine {
 		}
 
 		Input::Init(window);
+		CollisionManager::StartCollisionCheckThread();
 
 		glEnable(GL_DEPTH_TEST);
 		glEnable(GL_BLEND);
@@ -103,6 +105,7 @@ namespace GLengine {
 		LogInfo("Enigne Shutdown initiated");
 		glfwDestroyWindow(window);
 		glfwTerminate();
+		CollisionManager::StopCollisionCheckThread();
 		GameObjectManager::Cleanup();
 		ResourceManager::CleanAll();
 		LogInfo("Enigne Shutting down");
