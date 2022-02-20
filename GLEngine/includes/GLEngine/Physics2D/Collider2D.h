@@ -28,18 +28,16 @@ namespace GLengine {
 		void Start();
 		void Update();
 		void OnDestroy();
-		virtual bool OverlapColliderAABB(Collider2D* other) = 0;
+		virtual bool OverlapColliderAABB(Collider2D* other);
 	};
 
 	class GLENGINE_API BoxCollider2D :public Collider2D {
 	public:
 		BoxCollider2D(glm::vec2 size);
-		bool OverlapColliderAABB(Collider2D* other) override;
 	};
 
 	class GLENGINE_API CircleCollider2D :public Collider2D {
 	public:
 		CircleCollider2D(float radius);
-		bool OverlapColliderAABB(Collider2D* other) override;
 	};
 }

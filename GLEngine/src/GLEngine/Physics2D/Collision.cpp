@@ -108,7 +108,7 @@ namespace GLengine {
 				continue;
 
 			for (int i = 0; i < colliders.size() - 1; i++) {
-				for (int j = 1; j < colliders.size(); j++) {
+				for (int j = i+1; j < colliders.size(); j++) {
 					if (CheckCollisionAABB(colliders[i], colliders[j])) {
 						GameObject* g1 = colliders[i]->GetGameObject();
 						GameObject* g2 = colliders[j]->GetGameObject();

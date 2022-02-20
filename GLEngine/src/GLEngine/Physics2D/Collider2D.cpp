@@ -25,6 +25,10 @@ namespace GLengine {
 		bounds = new BoxBounds();
 	}
 
+	bool Collider2D::OverlapColliderAABB(Collider2D* other) {
+		return CollisionManager::CheckCollisionAABB(this, other);
+	}
+
 	void Collider2D::Start() {
 		CollisionManager::AddToColliders(this);
 	}
@@ -43,23 +47,11 @@ namespace GLengine {
 	BoxCollider2D::BoxCollider2D(glm::vec2 size) {
 		((BoxBounds*)bounds)->size = size;
 	}
-
-	bool BoxCollider2D::OverlapColliderAABB(Collider2D* other) {
-		
-		// for now
-		return false;
-	}
 #pragma endregion
 
 #pragma region CircleCollider2D
 	CircleCollider2D::CircleCollider2D(float radius) {
 		((CircleBounds*)bounds)->radius = radius;
-	}
-
-	bool CircleCollider2D::OverlapColliderAABB(Collider2D* other) {
-
-		// for now
-		return false;
 	}
 #pragma endregion
 }
