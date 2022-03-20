@@ -1,5 +1,6 @@
 #pragma once
 #include "GLEngine/Engine.h"
+#include "GLEngine/RenderCommand.h"
 
 namespace GLengine {
 	void framebuffer_size_callback(GLFWwindow* window, int width, int height)
@@ -71,26 +72,21 @@ namespace GLengine {
 
 		Input::Init(window);
 		CollisionManager::StartCollisionCheckThread();
-
-		glEnable(GL_DEPTH_TEST);
-		glEnable(GL_BLEND);
-		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
 		LogInfo("Enigne Ready");
 		CloseSection();
 		AddSection(" Runtime ");
+		RenderCommand::Initialise();
 	}
 
 	void Engine::Run() {
 
 		Time::Update();
 		glfwPollEvents();
-
 		glfwSwapBuffers(window);
-
-		glClearColor(0, 0, 0, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+		
+		RenderCommand::ClearColor(glm::vec4(0.2f, 0.2f, 0.2f, 1));
+		RenderCommand::Clear();
+	
 		if (!ViewManager::HasActiveCamera()) {
 			LogWarning("No active cameras detected");
 			return;

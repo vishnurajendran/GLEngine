@@ -4,7 +4,10 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <glad/glad.h>
 #include "GLEngine/Debugging.h"
-#include "Core/Core.h"
+#include <GLEngine/Core/Core.h>
+#include <GLEngine/Buffers.h>
+#include <GLEngine/VertexArray.h>
+#include <GLEngine/Shader.h>
 #include<string>
 
 namespace GLengine {
@@ -18,20 +21,6 @@ namespace GLengine {
 	enum GLENGINE_API TextureFormat {
 		RGB = GL_RGB,
 		RGBA = GL_RGBA,
-	};
-
-	class Shader {
-	private:
-		unsigned int shaderProgram;
-		void CompileShaders(const char* vertexShaderSource, const char* fragmentShaderSource);
-	public:
-		Shader(const char* vShaderSource, const char* fShaderSource);
-		~Shader();
-		void UseShader();
-		void SetBool(const char* attribName, bool value);
-		void SetInt(const char* attribName, int value);
-		void SetFloat(const char* attribName, float value);
-		void SetMatrix4f(const char* attribName, float* value);
 	};
 
 	class GLENGINE_API Texture2D {
@@ -63,13 +52,8 @@ namespace GLengine {
 
 	class GLENGINE_API Shape2D {
 	private:
-		float* vertices;
-		unsigned int vertexArrayLen;
-		unsigned int* indices;
-		unsigned int indexArrayLen;
-		unsigned int VBO;
+		VertexArray* vArray;
 		unsigned int VAO;
-		unsigned int EBO;
 		Material* material;
 
 	public:

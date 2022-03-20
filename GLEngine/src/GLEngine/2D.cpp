@@ -45,7 +45,7 @@ namespace GLengine {
 
 	Sprite2D::Sprite2D() {
 		GenerateShapeAttribs();
-		ResourceManager::CreateShader("def_sprite_shader", "Assets/Shaders/Sprite2D/Sprite2DVert.vs", "Assets/Shaders/Sprite2D/Sprite2DFrag.fs");
+		ResourceManager::CreateShader("def_sprite_shader", "Assets/Shaders/Sprite2D/Sprite2DShader.shader");
 		ResourceManager::CreateTexture2D("def_sprite_tex", "Assets/Images/Defaults/Sprite.jpg", 0, TextureFormat::RGB, TextureWrap::Repeat, 0);
 
 		Shader* spriteShader = ResourceManager::GetShader("def_sprite_shader");
@@ -66,7 +66,7 @@ namespace GLengine {
 
 	Sprite2D::Sprite2D(Texture2D* texture) {
 		GenerateShapeAttribs();
-		ResourceManager::CreateShader("def_sprite_shader", "Assets/Shaders/Sprite2D/Sprite2DVert.vs", "Assets/Shaders/Sprite2D/Sprite2DFrag.fs");
+		ResourceManager::CreateShader("def_sprite_shader", "Assets/Shaders/Sprite2D/Sprite2DShader.shader");
 		Shader* spriteShader = ResourceManager::GetShader("def_sprite_shader");
 
 		Texture2D* spriteTexture = new Texture2D{

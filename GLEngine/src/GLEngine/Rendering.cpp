@@ -8,95 +8,10 @@
 #include "GLEngine/Rendering.h"
 #include "GLEngine/FileHandling.h"
 #include "GLEngine/HelperDefinitions.h"
+#include "GLEngine/Buffers.h"
+#include "GLEngine/Renderer.h"
 
 namespace GLengine {
-#pragma region Shader Methods
-
-	Shader::Shader(const char* vertexShaderPath, const char* fragmentShaderPath) {
-		char* vShaderSource = ReadTextFile(vertexShaderPath);
-		char* fShaderSource = ReadTextFile(fragmentShaderPath);
-		CompileShaders(vShaderSource, fShaderSource);
-	}
-
-	void Shader::CompileShaders(const char* vShaderSource, const char* fShaderSource) {
-
-		unsigned int vertexShader;
-		unsigned int fragmentShader;
-
-		int compilationSuccess;
-		int linkingSuccess;
-		char log[512];
-
-		vertexShader = glCreateShader(GL_VERTEX_SHADER);
-		glShaderSource(vertexShader, 1, &vShaderSource, NULL);
-		glCompileShader(vertexShader);
-		glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &compilationSuccess);
-
-		if (!compilationSuccess) {
-			glGetShaderInfoLog(vertexShader, 512, NULL, log);
-			LogError("VERTEX SHADER COMPILATION FAILED");
-			LogError((std::string("[") + std::string(vShaderSource) + std::string("]")).c_str());
-			LogError(log);
-			return;
-		}
-
-		fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-		glShaderSource(fragmentShader, 1, &fShaderSource, NULL);
-		glCompileShader(fragmentShader);
-		glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &compilationSuccess);
-
-		if (!compilationSuccess) {
-			glGetShaderInfoLog(fragmentShader, 512, NULL, log);
-			LogError("FRAGMENT SHADER COMPILATION FAILED");
-			LogError((std::string("[") + std::string(fShaderSource) + std::string("]")).c_str());
-			LogError(log);
-			return;
-		}
-
-		shaderProgram = glCreateProgram();
-		glAttachShader(shaderProgram, vertexShader);
-		glAttachShader(shaderProgram, fragmentShader);
-		glLinkProgram(shaderProgram);
-
-		glGetProgramiv(shaderProgram, GL_LINK_STATUS, &linkingSuccess);
-		if (!linkingSuccess) {
-			glGetProgramInfoLog(shaderProgram, 512, NULL, log);
-			LogError("SHADER LINKING FAILED");
-			LogError(log);
-			return;
-		}
-
-		glDeleteShader(vertexShader);
-		glDeleteShader(fragmentShader);
-	}
-
-	Shader::~Shader() {
-		glDeleteProgram(shaderProgram);
-	}
-
-	void Shader::UseShader() {
-		glUseProgram(shaderProgram);
-	}
-
-	void Shader::SetBool(const char* attribName, bool value) {
-		glUniform1i(glGetUniformLocation(shaderProgram, attribName), (int)value);
-	}
-
-	void Shader::SetInt(const char* attribName, int value) {
-		glUniform1i(glGetUniformLocation(shaderProgram, attribName), value);
-	}
-
-	void Shader::SetFloat(const char* attribName, float value) {
-		glUniform1f(glGetUniformLocation(shaderProgram, attribName), value);
-	}
-
-	void Shader::SetMatrix4f(const char* attribName, float* matrixPtr) {
-		unsigned int transformLoc = glGetUniformLocation(shaderProgram, attribName);
-		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, matrixPtr);
-	}
-
-#pragma endregion
-
 #pragma region Texture2D Methods
 	Texture2D::~Texture2D() {
 		glDeleteTextures(1, &texture);
@@ -159,46 +74,25 @@ namespace GLengine {
 #pragma region Shape2D Methods
 
 	Shape2D::~Shape2D() {
-		glDeleteVertexArrays(1, &VAO);
-		glDeleteBuffers(1, &VBO);
-		glDeleteBuffers(1, &EBO);
+		vArray->~VertexArray();
 	}
 
 	Shape2D::Shape2D(float* vertices, int vertexArraySize, unsigned int* indices, int indexArraySize, Material* material) {
-		this->vertices = vertices;
-		this->indices = indices;
-		this->vertexArrayLen = vertexArraySize;
-		this->indexArrayLen = indexArraySize;
 		this->material = material;
 
-		glGenVertexArrays(1, &VAO);
-		glGenBuffers(1, &VBO);
-		glGenBuffers(1, &EBO);
+		vArray = VertexArray::Create();
+		VertexBuffer* vBuffer = VertexBuffer::CreateBuffer(vertices, vertexArraySize);
+		IndexBuffer* iBuffer = IndexBuffer::CreateBuffer(indices, indexArraySize);
 
-		glBindVertexArray(VAO);
+		BufferLayout layout = {
+			{ ShaderDataType::Float3, "a_Position", false},
+			{ ShaderDataType::Float3, "a_Color", false},
+			{ ShaderDataType::Float2, "a_TexCoord", false}
+		};
 
-		glBindBuffer(GL_ARRAY_BUFFER, VBO);
-		glBufferData(GL_ARRAY_BUFFER, sizeof(float) * this->vertexArrayLen, this->vertices, GL_STATIC_DRAW);
-
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-		glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(unsigned int) * this->indexArrayLen, this->indices, GL_STATIC_DRAW);
-
-		// position attribute
-		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
-		glEnableVertexAttribArray(0);
-
-		// color attribute
-		glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
-		glEnableVertexAttribArray(1);
-
-		// texture coord attribute
-		glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
-		glEnableVertexAttribArray(2);
-
-		glBindBuffer(GL_ARRAY_BUFFER, 0);
-		glBindVertexArray(0);
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-
+		vBuffer->SetLayout(layout);
+		vArray->AddVertexBuffer(vBuffer);
+		vArray->SetIndexBuffer(iBuffer);
 	}
 
 	void Shape2D::PrepareToDraw() {
@@ -206,19 +100,11 @@ namespace GLengine {
 	}
 
 	void Shape2D::Draw() {
-
-		//bind the vertices and indices
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-		glBindVertexArray(VAO);
-
+		vArray->Bind();
 		//draw the points
-		glDrawElements(GL_TRIANGLES, indexArrayLen, GL_UNSIGNED_INT, 0);
-
-		//unbind the vertices
-
-		glBindVertexArray(0);
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-
+		Renderer::Submit(vArray);
+		//unbind
+		vArray->Unbind();
 	}
 
 	void Shape2D::SetModelMatrix(glm::mat4 modelMatrix) {

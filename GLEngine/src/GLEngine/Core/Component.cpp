@@ -39,4 +39,8 @@ namespace GLengine {
 	void IComponent::OnCollide(Collision2D* col) {
 		//default no op
 	}
+
+	void IComponent::OnDrawGizmo() {
+		//default no op
+	}
 }

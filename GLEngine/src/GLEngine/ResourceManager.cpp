@@ -36,20 +36,20 @@ namespace GLengine {
 		return autoName;
 	}
 
-	void ResourceManager::CreateShader(std::string name, std::string vertShaderPath, std::string fragShaderPath) {
+	void ResourceManager::CreateShader(std::string name, std::string shaderPath) {
 
 		if (shaders.find(name) != shaders.end()) {
 			LogWarning((std::string("[ Resource Manager ] ") + name + std::string(" exists in cache already. skipping shader generation")).c_str());
 			return;
 		}
 
-		shaders.insert({ name, new Shader(vertShaderPath.c_str(), fragShaderPath.c_str()) });
+		shaders.insert({ name, Shader::CreateShader(ReadTextFile(shaderPath.c_str()))});
 		shaderKeys.push_back(name);
 	}
 
-	std::string ResourceManager::CreateShader(std::string vertShaderPath, std::string fragShaderPath) {
+	std::string ResourceManager::CreateShader(std::string shaderPath) {
 		std::string autoName = "Shader_" + std::to_string(autoShaderKeyId++);
-		CreateShader(autoName, vertShaderPath, fragShaderPath);
+		CreateShader(autoName, shaderPath);
 		return autoName;
 	}
 

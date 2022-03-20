@@ -2,7 +2,8 @@
 #include <map>
 #include <vector>
 #include <string>
-#include "Rendering.h"
+#include <GLEngine/Rendering.h>
+#include <GLEngine/Shader.h>
 namespace GLengine {
 	class GLENGINE_API ResourceManager {
 
@@ -57,7 +58,7 @@ namespace GLengine {
 		/// <param name="name"> key used to store in cache </param>
 		/// <param name="vertShaderPath"> vert shade path </param>
 		/// <param name="fragShaderPath"> fram shader path </param>
-		static void CreateShader(std::string name, std::string vertShaderPath, std::string fragShaderPath);
+		static void CreateShader(std::string name, std::string shaderPath);
 
 		/// <summary>
 		/// This Method Creates a Shader using the parameters provided and saved in runtime
@@ -67,7 +68,7 @@ namespace GLengine {
 		/// <param name="vertShaderPath"> vert shade path </param>
 		/// <param name="fragShaderPath"> fram shader path </param>
 		/// <returns>auto generated ID</returns>
-		static std::string CreateShader(std::string vertShaderPath, std::string fragShaderPath);
+		static std::string CreateShader(std::string shaderPath);
 
 		/// <summary>
 		/// This Method Creates a Material using the parameters provided and saved in runtime

@@ -27,6 +27,7 @@ namespace GLengine {
 	void GameObject::UpdateGameObject() {
 		for (IComponent* compoenent : attachedComponents) {
 			compoenent->Update();
+			compoenent->OnDrawGizmo();
 		}
 	}
 

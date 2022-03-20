@@ -9,7 +9,7 @@ void BasicExampleComponent::Start() {
 	GLengine::Log(obj->name.c_str());
 	if (obj != NULL) {
 		bird = GetGameObject()->GetAttachedComponent<GLengine::Sprite2D>();
-		GetGameObject()->AttachComponent(new GLengine::CircleCollider2D(0.1f));
+		GetGameObject()->AttachComponent(new GLengine::BoxCollider2D(glm::vec2(0.1f)));
 	}
 	else {
 		GLengine::Log("Sprite2D Component not attached");
@@ -27,7 +27,7 @@ void BasicExampleComponent::OnDestroy() {
 
 void BasicExampleComponent::OnCollide(GLengine::Collision2D* collision)
 {
-	GLengine::Log(("Collision detected between " + collision->thisCollider->GetGameObject()->name + " and " + collision->other->GetGameObject()->name).c_str());
+	//GLengine::Log(("Collision detected between " + collision->thisCollider->GetGameObject()->name + " and " + collision->other->GetGameObject()->name).c_str());
 }
 
 #pragma endregion

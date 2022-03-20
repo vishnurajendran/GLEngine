@@ -17,6 +17,7 @@ namespace GLengine {
 		virtual void Update();
 		virtual void OnDestroy();
 		virtual void OnCollide(Collision2D* collision);
+		virtual void OnDrawGizmo();
 		IComponent();
 		~IComponent();
 		void OnAttached(GameObject* parentObject);
