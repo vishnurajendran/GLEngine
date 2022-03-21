@@ -5,46 +5,43 @@ namespace GLengine {
 		CompileShaders(shaderSource);
 	}
 
-	void OpenGLShader::CompileShaders(std::string shaderSource) {
+	bool OpenGLShader::CompileVertexShader(std::string& shaderSource, unsigned int& shaderRef) {
+		const char* shaderCode = ExtractShaderSource(ShaderType::Vertex, shaderSource);
+		return CompileShader(GL_VERTEX_SHADER, shaderRef, shaderCode);
+	}
 
-		unsigned int vertexShader;
-		unsigned int fragmentShader;
+	bool OpenGLShader::CompileFragmentShader(std::string& shaderSource, unsigned int& shaderRef) {
+		const char* shaderCode = ExtractShaderSource(ShaderType::Fragment, shaderSource);
+		return CompileShader(GL_FRAGMENT_SHADER, shaderRef, shaderCode);
+	}
 
+	bool OpenGLShader::CompileShader(GLenum shaderType, unsigned int& shaderRef, const char* shaderSource) {
+		
 		int compilationSuccess;
-		int linkingSuccess;
 		char log[512];
 
-		const char* vShaderSource = ExtractShaderSource(ShaderType::Vertex, shaderSource);
-		vertexShader = glCreateShader(GL_VERTEX_SHADER);
-		glShaderSource(vertexShader, 1,&vShaderSource, NULL);
-		glCompileShader(vertexShader);
-		glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &compilationSuccess);
+		shaderRef = glCreateShader(shaderType);
+		glShaderSource(shaderRef, 1, &shaderSource, NULL);
+		glCompileShader(shaderRef);
+		glGetShaderiv(shaderRef, GL_COMPILE_STATUS, &compilationSuccess);
 
 		if (!compilationSuccess) {
-			glGetShaderInfoLog(vertexShader, 512, NULL, log);
+			glGetShaderInfoLog(shaderRef, 512, NULL, log);
 			LogError("VERTEX SHADER COMPILATION FAILED");
-			LogError((std::string("[") + std::string(vShaderSource) + std::string("]")).c_str());
+			LogError((std::string("[") + std::string(shaderSource) + std::string("]")).c_str());
 			LogError(log);
-			return;
+			return false;
 		}
 
-		const char* fShaderSource = ExtractShaderSource(ShaderType::Fragment, shaderSource);
-		fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-		glShaderSource(fragmentShader, 1, &fShaderSource, NULL);
-		glCompileShader(fragmentShader);
-		glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &compilationSuccess);
+		return true;
+	}
 
-		if (!compilationSuccess) {
-			glGetShaderInfoLog(fragmentShader, 512, NULL, log);
-			LogError("FRAGMENT SHADER COMPILATION FAILED");
-			LogError((std::string("[") + std::string(fShaderSource) + std::string("]")).c_str());
-			LogError(log);
-			return;
-		}
-
+	bool OpenGLShader::LinkShaderProgram(unsigned int& vertShader, unsigned int& fragShader) {
+		int linkingSuccess;
+		char log[512];
 		shaderProgram = glCreateProgram();
-		glAttachShader(shaderProgram, vertexShader);
-		glAttachShader(shaderProgram, fragmentShader);
+		glAttachShader(shaderProgram, vertShader);
+		glAttachShader(shaderProgram, fragShader);
 		glLinkProgram(shaderProgram);
 
 		glGetProgramiv(shaderProgram, GL_LINK_STATUS, &linkingSuccess);
@@ -52,8 +49,27 @@ namespace GLengine {
 			glGetProgramInfoLog(shaderProgram, 512, NULL, log);
 			LogError("SHADER LINKING FAILED");
 			LogError(log);
+			return false;
+		}
+
+		return true;
+	}
+
+	void OpenGLShader::CompileShaders(std::string shaderSource) {
+		unsigned int vertexShader=0;
+		unsigned int fragmentShader=0;
+
+		//compile vertex shader
+		if (!CompileVertexShader(shaderSource, vertexShader)) {
 			return;
 		}
+		
+		//compile fragment shader
+		if (!CompileFragmentShader(shaderSource, fragmentShader)) {
+			return;
+		}
+
+		LinkShaderProgram(vertexShader, fragmentShader);
 
 		glDeleteShader(vertexShader);
 		glDeleteShader(fragmentShader);

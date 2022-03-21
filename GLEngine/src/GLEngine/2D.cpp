@@ -49,8 +49,8 @@ namespace GLengine {
 		ResourceManager::CreateTexture2D("def_sprite_tex", "Assets/Images/Defaults/Sprite.jpg", 0, TextureFormat::RGB, TextureWrap::Repeat, 0);
 
 		Shader* spriteShader = ResourceManager::GetShader("def_sprite_shader");
-		Texture2D* spriteTexture = new Texture2D{
-			*ResourceManager::GetTexture2D("def_sprite_tex")
+		Texture2D* spriteTexture = {
+			ResourceManager::GetTexture2D("def_sprite_tex")
 		};
 
 		ResourceManager::CreateMaterial("def_sprite_material", spriteShader, spriteTexture, 1);
@@ -69,8 +69,8 @@ namespace GLengine {
 		ResourceManager::CreateShader("def_sprite_shader", "Assets/Shaders/Sprite2D/Sprite2DShader.shader");
 		Shader* spriteShader = ResourceManager::GetShader("def_sprite_shader");
 
-		Texture2D* spriteTexture = new Texture2D{
-			*texture
+		Texture2D* spriteTexture = {
+			texture
 		};
 
 		std::string matKey = ResourceManager::CreateMaterial(spriteShader, spriteTexture, 1);

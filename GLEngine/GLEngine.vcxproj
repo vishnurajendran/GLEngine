@@ -107,6 +107,7 @@
     <ClInclude Include="includes\GLEngine\OpenGL\OpenGLHelper.h" />
     <ClInclude Include="includes\GLEngine\OpenGL\OpenGLRendererAPI.h" />
     <ClInclude Include="includes\GLEngine\OpenGL\OpenGLShader.h" />
+    <ClInclude Include="includes\GLEngine\OpenGL\OpenGLTexture2D.h" />
     <ClInclude Include="includes\GLEngine\OpenGL\OpenGLVertexArray.h" />
     <ClInclude Include="includes\GLEngine\Physics2D\Collider2D.h" />
     <ClInclude Include="includes\GLEngine\Physics2D\Collision.h" />
@@ -365,6 +366,7 @@
     <ClInclude Include="includes\KHR\khrplatform.h" />
     <ClInclude Include="includes\stb_image.h" />
     <ClInclude Include="includes\GLEngine\VertexArray.h" />
+    <ClInclude Include="includes\GLEngine\Texture2D.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="Additional Libraries\glfw3.lib" />
@@ -528,6 +530,7 @@
     <ClCompile Include="src\GLEngine\OpenGL\OpenGLBuffers.cpp" />
     <ClCompile Include="src\GLEngine\OpenGL\OpenGLRendererAPI.cpp" />
     <ClCompile Include="src\GLEngine\OpenGL\OpenGLShader.cpp" />
+    <ClCompile Include="src\GLEngine\OpenGL\OpenGLTexture2D.cpp" />
     <ClCompile Include="src\GLEngine\OpenGL\OpenGLVertexArray.cpp" />
     <ClCompile Include="src\GLEngine\Physics2D\Collider2D.cpp" />
     <ClCompile Include="src\GLEngine\Physics2D\Collision.cpp" />
@@ -538,6 +541,7 @@
     <ClCompile Include="src\GLEngine\ResourceManager.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\GLEngine\Shader.cpp" />
+    <ClCompile Include="src\GLEngine\Texture2D.cpp" />
     <ClCompile Include="src\GLEngine\VertexArray.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

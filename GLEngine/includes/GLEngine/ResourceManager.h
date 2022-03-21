@@ -79,7 +79,7 @@ namespace GLengine {
 		/// <param name="textures"> texture array to use </param>
 		/// <param name="lenOfTex"> total no of elements in texture array </param>
 		/// <returns>auto generated ID</returns>
-		static void CreateMaterial(std::string name, Shader* shader, Texture2D textures[], int lenOfTex = 0);
+		static void CreateMaterial(std::string name, Shader* shader, Texture2D* textures, int lenOfTex = 0);
 
 
 		/// <summary>
@@ -91,7 +91,7 @@ namespace GLengine {
 		/// <param name="textures"> texture array to use </param>
 		/// <param name="lenOfTex"> total no of elements in texture array </param>
 		/// <returns>auto generated ID</returns>
-		static std::string CreateMaterial(Shader* shader, Texture2D textures[], int lenOfTex = 0);
+		static std::string CreateMaterial(Shader* shader, Texture2D* textures, int lenOfTex = 0);
 
 
 		//Fetch methods

@@ -5,6 +5,10 @@ namespace GLengine {
 	class OpenGLShader : public Shader {
 	private:
 		unsigned int shaderProgram;
+		bool CompileShader(GLenum shaderType, unsigned int& shaderRef, const char* shaderSource);
+		bool CompileVertexShader(std::string& shaderSource, unsigned int& shaderRef);
+		bool CompileFragmentShader(std::string& shaderSource, unsigned int& shaderRef);
+		bool LinkShaderProgram(unsigned int& vertShader, unsigned int& fragShader);
 	public:
 		OpenGLShader(std::string source);
 		~OpenGLShader();

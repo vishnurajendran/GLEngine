@@ -25,7 +25,7 @@ namespace GLengine {
 			return;
 		}
 
-		textures.insert({ name, new Texture2D(path.c_str(), reqComp, texFormat, wrap, texOrder) });
+		textures.insert({ name, Texture2D::CreateTexture(path.c_str(), reqComp, texFormat, wrap, texOrder) });
 		textureKeys.push_back(name);
 		Log( ("[ Resource Manager ] Added " + name).c_str());
 	}
@@ -54,7 +54,7 @@ namespace GLengine {
 	}
 
 
-	void ResourceManager::CreateMaterial(std::string name, Shader* shader, Texture2D textures[], int lenOfTex) {
+	void ResourceManager::CreateMaterial(std::string name, Shader* shader, Texture2D* textures, int lenOfTex) {
 
 		if (materials.find(name) != materials.end()) {
 			LogWarning((std::string("[ Resource Manager ] ") + name + std::string(" exists in cache already. skipping material generation")).c_str());
@@ -65,7 +65,7 @@ namespace GLengine {
 		materialKeys.push_back(name);
 	}
 
-	std::string ResourceManager::CreateMaterial(Shader* shader, Texture2D textures[], int lenOfTex) {
+	std::string ResourceManager::CreateMaterial(Shader* shader, Texture2D* textures, int lenOfTex) {
 		std::string autoName = "Mat_" + std::to_string(autoMatKeyId++);
 		CreateMaterial(autoName, shader, textures, lenOfTex);
 		return autoName;
