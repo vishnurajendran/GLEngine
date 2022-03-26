@@ -5,11 +5,17 @@
 namespace GLengine {
 
 	OpenGLVertexArray::OpenGLVertexArray() {
+		vBuffers = nullptr;
+		iBuffer = nullptr;
 		glGenVertexArrays(1, &arrayId);
 		Bind();
 	}
 
 	void OpenGLVertexArray::AddVertexBuffer(VertexBuffer* vBuffer) {
+		
+		if (vBuffers == nullptr)
+			vBuffers = new std::vector<VertexBuffer*>();
+		
 		Bind();
 		vBuffer->Bind();
 		unsigned int index = 0;
@@ -23,7 +29,7 @@ namespace GLengine {
 			index++;
 		}
 
-		vBuffers.push_back(vBuffer);
+		vBuffers->push_back(vBuffer);
 	}
 
 	void OpenGLVertexArray::SetIndexBuffer(IndexBuffer* iBuffer) {

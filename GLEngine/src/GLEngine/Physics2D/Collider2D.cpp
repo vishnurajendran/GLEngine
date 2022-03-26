@@ -6,8 +6,8 @@ namespace GLengine {
 
 #pragma region Bounds
 	bool BoxBounds::InsideBounds(glm::vec3 pos) {
-		float xExtends = size.x / 2;
-		float yExtends = size.y / 2;
+		float xExtends = worldSize.x / 2;
+		float yExtends = worldSize.y / 2;
 		bool inX = pos.x > (centre.x - xExtends) && pos.x < (centre.x + xExtends);
 		bool inY = pos.y > (centre.y - yExtends) && pos.y < (centre.y + yExtends);
 
@@ -47,8 +47,17 @@ namespace GLengine {
 		((BoxBounds*)bounds)->size = size;
 	}
 
+	void BoxCollider2D::Update() {
+		Collider2D::Update();
+		glm::vec2 boundsSize = ((BoxBounds*)bounds)->size;
+		glm::vec3 locScale = GetTransform()->localScale;
+		((BoxBounds*)bounds)->worldSize = glm::vec2(boundsSize.x* locScale.x, boundsSize.y * locScale.y);
+		
+		//LogInfo((std::to_string(((BoxBounds*)bounds)->worldSize.x) + "," + std::to_string(((BoxBounds*)bounds)->worldSize.y)).c_str());
+	}
+
 	void BoxCollider2D::OnDrawGizmo() {
-		Gizmos::DrawBox(GetTransform()->position, ((BoxBounds*)bounds)->size, glm::vec3(0, 1, 0));
+		Gizmos::DrawBox(GetTransform()->position, ((BoxBounds*)bounds)->worldSize, glm::vec3(0, 1, 0));
 	}
 
 #pragma endregion
@@ -59,8 +68,14 @@ namespace GLengine {
 		((CircleBounds*)bounds)->radius = radius;
 	}
 
+	void CircleCollider2D::Update() {
+		Collider2D::Update();
+		((CircleBounds*)bounds)->worldRadius = (((CircleBounds*)bounds)->radius * GetTransform()->localScale.x);
+	}
+
 	void CircleCollider2D::OnDrawGizmo() {
 		//need to add draw circle
+		Gizmos::DrawCircle(GetTransform()->position, ((CircleBounds*)bounds)->worldRadius, glm::vec3(0, 1, 0));
 	}
 
 #pragma endregion

@@ -17,7 +17,26 @@ namespace GLengine {
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	}
 
-	void OpenGLRendererAPI::DrawIndexed(VertexArray* vArray) {
-		glDrawElements(GL_TRIANGLES, vArray->GetIndexBuffer()->GetLength(), GL_UNSIGNED_INT, nullptr);
+	GLenum GetGLDrawPrimitive(RendererAPI::RenderPrimitive primitive) {
+		switch (primitive) {
+		case RendererAPI::RenderPrimitive::TRIANGLES:
+			return GL_TRIANGLES;
+
+		case RendererAPI::RenderPrimitive::LINES:
+			return GL_LINES;
+
+		case RendererAPI::RenderPrimitive::LINE_LOOP:
+			return GL_LINE_LOOP;
+		}
+	}
+
+	void OpenGLRendererAPI::DrawIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive) {
+		GLenum primitive = GetGLDrawPrimitive(drawPrimitive);
+		glDrawElements(primitive, vArray->GetIndexBuffer()->GetLength(), GL_UNSIGNED_INT, nullptr);
+	}
+
+	void OpenGLRendererAPI::DrawNonIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive) {
+		GLenum primitive = GetGLDrawPrimitive(drawPrimitive);
+		glDrawArrays(primitive, 0, vArray->GetVertexBuffers()[0]->GetLength()/3);
 	}
 }

@@ -12,8 +12,12 @@ namespace GLengine {
 			rendererAPI->SetClearColor(color);
 		}
 
-		inline static void DrawIndexed(VertexArray* vArrray) {
-			rendererAPI->DrawIndexed(vArrray);
+		inline static void DrawIndexed(VertexArray* vArrray, RendererAPI::RenderPrimitive drawPrimitive) {
+			rendererAPI->DrawIndexed(vArrray, drawPrimitive);
+		}
+
+		inline static void DrawNonIndexed(VertexArray* vArrray, RendererAPI::RenderPrimitive drawPrimitive) {
+			rendererAPI->DrawNonIndexed(vArrray, drawPrimitive);
 		}
 
 		inline static void Initialise() {

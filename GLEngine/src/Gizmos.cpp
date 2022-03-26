@@ -1,8 +1,54 @@
 #include <GLEngine/Gizmos.h>
 #include <GLEngine/ResourceManager.h>
 #include <GLEngine/Core/ViewManagement.h>
+#include <GLEngine/Renderer.h>
 
 namespace GLengine {
+
+	GizmoPrimitive::GizmoPrimitive(float* vert, int count) {
+		this->vertices = vert;
+		this->count = count;
+	}
+
+	GizmoPrimitive* GizmoPrimitives::Box(glm::vec2 size) {
+		float* vert = new float[12]{
+			//top left					
+			-0.5f * size.x,0.5f * size.y,0,
+			//top right
+			 0.5f * size.x,0.5f * size.y, 0,
+			 //btm right									
+			 0.5f * size.x,-0.5f * size.y, 0,
+			 //btm left
+			 -0.5f * size.x,-0.5f * size.y, 0,
+		};
+		return new GizmoPrimitive(vert, 12);
+	}
+
+	GizmoPrimitive* GizmoPrimitives::Circle(float radius, int resolution) {
+		float* verts = new float[resolution * 3];
+		int indx = 0;
+		int baseIndex = 0;
+		float angle = 0;
+		float degToRad = 0.0174533;
+
+		int adDelta = 0;
+
+		for (int i = 0; i < (resolution + 1); i++)
+		{
+			float x = sin(degToRad * angle) * radius;
+			float y = cos(degToRad * angle) * radius;
+
+			verts[adDelta] = x;
+			verts[adDelta + 1] = y;
+			verts[adDelta + 2] = 0;
+
+			adDelta += 3;
+
+			angle += (360.0f / resolution);
+		}
+
+		return new GizmoPrimitive(verts, resolution * 3);
+	}
 
 	bool Gizmos::isInitialised = false;
 	std::string Gizmos::shaderId = "";
@@ -14,32 +60,20 @@ namespace GLengine {
 		gizmoShader = ResourceManager::GetShader(shaderId);
 	}
 
-	void Gizmos::DrawVertices(glm::vec3 position, float* vertices, int count, int vertRows, glm::vec4 color) {
+	void Gizmos::DrawVertices(glm::vec3 position, float* vertices, int count, glm::vec4 color) {
 		
 		if (!isInitialised)
 			Init();
 		
-		//really stupid way to do
-		//we are literally creating a buffer for each draw call.
-		//should be ok for now.
-
-		glEnable(GL_BLEND);
-		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
-		unsigned int VBO, VAO;
-        glGenVertexArrays(1, &VAO);
-        glGenBuffers(1, &VBO);
-        glBindVertexArray(VAO);
-
-        glBindBuffer(GL_ARRAY_BUFFER, VBO);
-        glBufferData(GL_ARRAY_BUFFER, count * sizeof(float), vertices, GL_STATIC_DRAW);
-
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE,3*sizeof(float), (void*)0);
-        glEnableVertexAttribArray(0);
-
-		glBindBuffer(GL_ARRAY_BUFFER, 0);
-        glBindVertexArray(0);
+		VertexArray* vArray = VertexArray::Create();
+		VertexBuffer* vBuffer = VertexBuffer::CreateBuffer(vertices, count);
+		BufferLayout layout = {
+			{ShaderDataType::Float3, "a_Positiont", false}
+		};
 		
+		vBuffer->SetLayout(layout);
+		vArray->AddVertexBuffer(vBuffer);
+
 		gizmoShader->UseShader();
 		position.z += 0.15f;
 		glm::mat4 view = ViewManager::GetViewMatrix();
@@ -52,30 +86,20 @@ namespace GLengine {
 		gizmoShader->SetMatrix4f("projection", glm::value_ptr(projection));
 		gizmoShader->SetUniform4f("lineColor", color);
 
-		glBindVertexArray(VAO);
-		glDrawArrays(GL_LINE_LOOP,0, vertRows);
+		vArray->Bind();
+		Renderer::Submit(vArray, RendererAPI::RenderPrimitive::LINE_LOOP);
 
-		glDeleteVertexArrays(1, &VAO);
-		glDeleteBuffers(1, &VBO);
+		vArray->Unbind();
 	}
 
 	void Gizmos::DrawBox(glm::vec2 centre, glm::vec2 size, glm::vec3 color) {
-		float* vert = new float[12]{
-			//top left					
-			-size.x/2,size.y/2,0,
-			//top right
-			 size.x/2,size.y/2, 0,
-			//btm right									
-			 size.x/2,-size.y/2, 0,	    
-			//btm left
-			-size.x/2,-size.y/2, 0,
-		};
-
-		DrawVertices(glm::vec3(centre,0), vert, 12,4, glm::vec4(color, 1));
-		//std::thread t = std::thread{ DrawVertices,  };
+		
+		GizmoPrimitive* boxPrimitive = GizmoPrimitives::Box(size);
+		DrawVertices(glm::vec3(centre,0), boxPrimitive->vertices, boxPrimitive->count, glm::vec4(color, 1));
 	}
 
 	void Gizmos::DrawCircle(glm::vec2 centre, float radius, glm::vec3 color) {
-
+		GizmoPrimitive* boxPrimitive = GizmoPrimitives::Circle(radius, 50);
+		DrawVertices(glm::vec3(centre, 0), boxPrimitive->vertices, boxPrimitive->count, glm::vec4(color, 1));
 	}
 }

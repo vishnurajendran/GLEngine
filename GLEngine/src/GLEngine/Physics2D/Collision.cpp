@@ -25,35 +25,36 @@ namespace GLengine {
 	}
 
 	bool CollisionManager::CheckCollision(BoxCollider2D* col1, BoxCollider2D* col2) {
-		// collision x-axis?
+
 		BoxBounds* b1 = (BoxBounds*)col1->bounds;
 		BoxBounds* b2 = (BoxBounds*)col2->bounds;
 
 		//collision x-axis
-		bool collisionX = b1->centre.x + b1->size.x >= b2->centre.x &&
-			b2->centre.x + b2->size.x >= b1->centre.x;
+		bool collisionX = (b1->centre.x + b1->worldSize.x) >= b2->centre.x &&
+						  (b2->centre.x + b2->worldSize.x) >= b1->centre.x;
+
 		// collision y-axis?
-		bool collisionY = b1->centre.y + b1->size.y >= b2->centre.y &&
-			b2->centre.y + b2->size.y >= b1->centre.y;
+		bool collisionY = (b1->centre.y + b1->worldSize.y) >= b2->centre.y &&
+						  (b2->centre.y + b2->worldSize.y) >= b1->centre.y;
+
 		// collision only if on both axes
 		return collisionX && collisionY;
 	}
 
 	bool CollisionManager::CheckCollision(CircleCollider2D* col1, CircleCollider2D* col2) {
 		float dist = glm::abs(glm::distance(col1->bounds->centre, col2->bounds->centre));
-		bool colliding = dist <= (((CircleBounds*)col1->bounds)->radius + ((CircleBounds*)col2->bounds)->radius);
+		bool colliding = dist <= (((CircleBounds*)col1->bounds)->worldRadius + ((CircleBounds*)col2->bounds)->worldRadius);
 		return colliding;
 	}
 
 	bool CollisionManager::CheckCollision(CircleCollider2D* col1, BoxCollider2D* col2) {
-		
 		BoxBounds* b = (BoxBounds*)col2->bounds;
 		CircleBounds* c = (CircleBounds*)col1->bounds;
 		
 		// get center point circle first 
-		glm::vec2 center(col1->GetTransform()->position + c->radius);
+		glm::vec2 center(col1->GetTransform()->position + c->worldRadius);
 		// calculate AABB info (center, half-extents)
-		glm::vec2 aabb_half_extents(b->size.x / 2.0f, b->size.y / 2.0f);
+		glm::vec2 aabb_half_extents(b->worldSize.x / 2.0f, b->worldSize.y / 2.0f);
 		glm::vec2 aabb_center(
 			col1->GetTransform()->position.x + aabb_half_extents.x,
 			col1->GetTransform()->position.y + aabb_half_extents.y
@@ -65,21 +66,21 @@ namespace GLengine {
 		glm::vec2 closest = aabb_center + clamped;
 		// retrieve vector between center circle and closest point AABB and check if length <= radius
 		difference = closest - center;
-		return glm::length(difference) < c->radius;
+		return glm::length(difference) < c->worldRadius;
 	}
 
 	bool CollisionManager::CheckCollisionAABB(Collider2D* col1, Collider2D* col2){
 		
-		if (instanceof<BoxCollider2D*>((BoxCollider2D*)col1) && instanceof<BoxCollider2D*>((BoxCollider2D*)col2)) {
+		if (dynamic_cast<BoxCollider2D*>(col1) != nullptr && dynamic_cast<BoxCollider2D*>(col2) != nullptr) {
 			return CheckCollision((BoxCollider2D*)col1, (BoxCollider2D*)col2);
 		}
-		else if (instanceof<CircleCollider2D*>((CircleCollider2D*)col1) && instanceof<BoxCollider2D*>((BoxCollider2D*)col2)) {
+		else if (dynamic_cast<CircleCollider2D*>(col1) != nullptr && dynamic_cast<BoxCollider2D*>(col2) != nullptr) {
 			return CheckCollision((CircleCollider2D*)col2, (BoxCollider2D*)col1);
 		}
-		else if (instanceof<BoxCollider2D*>((BoxCollider2D*)col1) && instanceof<CircleCollider2D*>((CircleCollider2D*)col2)) {
+		else if (dynamic_cast<BoxCollider2D*>(col1) != nullptr && dynamic_cast<CircleCollider2D*>(col2) != nullptr) {
 			return CheckCollision((CircleCollider2D*)col1, (BoxCollider2D*)col2);
 		}
-		else {
+		else if (dynamic_cast<CircleCollider2D*>(col1) != nullptr && dynamic_cast<CircleCollider2D*>(col2) != nullptr) {
 			return CheckCollision((CircleCollider2D*)col1, (CircleCollider2D*)col2);
 		}
 	}

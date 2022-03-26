@@ -19,7 +19,7 @@ namespace GLengine {
 		vertSize = 32;
 
 		indices = new unsigned int[] {
-			0, 1, 3,   // first triangle
+				0, 1, 3,   // first triangle
 				1, 2, 3    // second triangle
 		};
 

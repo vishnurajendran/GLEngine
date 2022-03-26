@@ -12,7 +12,7 @@ namespace GLengine {
 	class Renderer {
 	public:
 		static void BeginScene();
-		static void Submit(VertexArray* vArray);
+		static void Submit(VertexArray* vArray, RendererAPI::RenderPrimitive drawPrimitive= RendererAPI::RenderPrimitive::TRIANGLES);
 		static void EndScene();
 	};
 

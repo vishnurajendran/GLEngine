@@ -3,7 +3,7 @@
 namespace GLengine {
 	class OpenGLVertexArray : public VertexArray {
 		unsigned int arrayId;
-		std::vector<VertexBuffer*> vBuffers;
+		std::vector<VertexBuffer*>* vBuffers;
 		IndexBuffer* iBuffer;
 	public:
 		OpenGLVertexArray();
@@ -12,6 +12,6 @@ namespace GLengine {
 		void Bind() override;
 		void Unbind() override;
 		inline IndexBuffer* GetIndexBuffer() override { return iBuffer; }
-		inline std::vector<VertexBuffer*> GetVertexBuffers() override { return vBuffers; }
+		inline std::vector<VertexBuffer*> GetVertexBuffers() override { return *vBuffers; }
 	};
 }
