@@ -512,7 +512,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="includes\glm\detail\glm.cpp" />
-    <ClCompile Include="src\Gizmos.cpp" />
+    <ClCompile Include="src\GLEngine\Gizmos.cpp" />
     <ClCompile Include="src\GLEngine\2D.cpp" />
     <ClCompile Include="src\GLEngine\Buffers.cpp" />
     <ClCompile Include="src\GLEngine\Core\Component.cpp" />

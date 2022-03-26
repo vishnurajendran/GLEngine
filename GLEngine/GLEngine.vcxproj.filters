@@ -1336,7 +1336,7 @@
     <ClCompile Include="src\GLEngine\Physics2D\Collision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Gizmos.cpp">
+    <ClCompile Include="src\GLEngine\Gizmos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\GLEngine\OpenGL\OpenGLBuffers.cpp">
