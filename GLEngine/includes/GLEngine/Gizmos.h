@@ -14,7 +14,7 @@ namespace GLengine {
 		int count;
 	};
 
-	class GLENGINE_API GizmoPrimitives {
+	class GizmoPrimitives {
 	public:
 		static GizmoPrimitive* Box(glm::vec2 size);
 		static GizmoPrimitive* Circle(float radius, int resolution);
