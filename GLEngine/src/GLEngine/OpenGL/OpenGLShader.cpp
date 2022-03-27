@@ -83,6 +83,10 @@ namespace GLengine {
 		glUseProgram(shaderProgram);
 	}
 
+	void OpenGLShader::Unbind() {
+		glUseProgram(0);
+	}
+
 	void OpenGLShader::SetBool(const char* attribName, bool value) {
 		glUniform1i(glGetUniformLocation(shaderProgram, attribName), (int)value);
 	}

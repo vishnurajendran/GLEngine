@@ -24,10 +24,12 @@ namespace GLengine {
 		static std::string shaderId;
 		static bool isInitialised;
 		static Shader* gizmoShader;
+		static glm::vec4 gizmoColor;
 		static void Init();
 		static void DrawVertices(glm::vec3 position, float* vertices,int vertRows, glm::vec4 color);
 	public:
-		static void DrawBox(glm::vec2 centre, glm::vec2 size, glm::vec3 color);
-		static void DrawCircle(glm::vec2 centre, float radius, glm::vec3 color);
+		static void SetGizmoColor(glm::vec4 color);
+		static void DrawBox(glm::vec2 centre, glm::vec2 size);
+		static void DrawCircle(glm::vec2 centre, float radius);
 	};
 }

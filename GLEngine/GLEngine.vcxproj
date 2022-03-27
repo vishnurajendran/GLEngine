@@ -103,6 +103,7 @@
     <ClInclude Include="includes\GLEngine\Gizmos.h" />
     <ClInclude Include="includes\GLEngine\HelperDefinitions.h" />
     <ClInclude Include="includes\GLEngine\InputHandling.h" />
+    <ClInclude Include="includes\GLEngine\Material.h" />
     <ClInclude Include="includes\GLEngine\OpenGL\OpenGLBuffers.h" />
     <ClInclude Include="includes\GLEngine\OpenGL\OpenGLHelper.h" />
     <ClInclude Include="includes\GLEngine\OpenGL\OpenGLRendererAPI.h" />
@@ -527,6 +528,7 @@
     <ClCompile Include="src\GLEngine\FileHandling.cpp" />
     <ClCompile Include="src\GLEngine\Game.cpp" />
     <ClCompile Include="src\GLEngine\InputHandling.cpp" />
+    <ClCompile Include="src\GLEngine\Material.cpp" />
     <ClCompile Include="src\GLEngine\OpenGL\OpenGLBuffers.cpp" />
     <ClCompile Include="src\GLEngine\OpenGL\OpenGLRendererAPI.cpp" />
     <ClCompile Include="src\GLEngine\OpenGL\OpenGLShader.cpp" />

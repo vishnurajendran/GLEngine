@@ -53,9 +53,11 @@ namespace GLengine {
 	bool Gizmos::isInitialised = false;
 	std::string Gizmos::shaderId = "";
 	Shader* Gizmos::gizmoShader;
+	glm::vec4 Gizmos::gizmoColor;
 
 	void Gizmos::Init() {
 		isInitialised = true;
+		gizmoColor = glm::vec4(0, 1, 0,0);
 		shaderId = ResourceManager::CreateShader("Assets/Shaders/Gizmos/DefaultGizmo.shader");
 		gizmoShader = ResourceManager::GetShader(shaderId);
 	}
@@ -67,39 +69,40 @@ namespace GLengine {
 		
 		VertexArray* vArray = VertexArray::Create();
 		VertexBuffer* vBuffer = VertexBuffer::CreateBuffer(vertices, count);
+		Material* gizmoMat = new Material(gizmoShader, nullptr, 0);
 		BufferLayout layout = {
 			{ShaderDataType::Float3, "a_Positiont", false}
 		};
 		
 		vBuffer->SetLayout(layout);
 		vArray->AddVertexBuffer(vBuffer);
-
-		gizmoShader->UseShader();
-		position.z += 0.15f;
+		//position.z += 0.15f;
 		glm::mat4 view = ViewManager::GetViewMatrix();
 		glm::mat4 projection = ViewManager::GetProjectionMatrix();
 		glm::mat4 model = glm::mat4(1.0f);
 		view = glm::translate(view,position);
 
-		gizmoShader->SetMatrix4f("model", glm::value_ptr(model));
-		gizmoShader->SetMatrix4f("view", glm::value_ptr(view));
-		gizmoShader->SetMatrix4f("projection", glm::value_ptr(projection));
-		gizmoShader->SetUniform4f("lineColor", color);
+		gizmoMat->SetMatrix4f("model", model);
+		gizmoMat->SetMatrix4f("view", view);
+		gizmoMat->SetMatrix4f("projection", projection);
+		gizmoMat->SetUniform4f("lineColor", color);
 
-		vArray->Bind();
-		Renderer::Submit(vArray, RendererAPI::RenderPrimitive::LINE_LOOP);
-
-		vArray->Unbind();
+		Renderer::Submit(RenderLayer::Debug, new RenderRequest("Gizmo",vArray,gizmoMat, RendererAPI::RenderPrimitive::LINE_LOOP, 0));
 	}
 
-	void Gizmos::DrawBox(glm::vec2 centre, glm::vec2 size, glm::vec3 color) {
+	void Gizmos::SetGizmoColor(glm::vec4 color) {
+		gizmoColor = color;
+		gizmoColor.a = 1;
+	}
+
+	void Gizmos::DrawBox(glm::vec2 centre, glm::vec2 size) {
 		
 		GizmoPrimitive* boxPrimitive = GizmoPrimitives::Box(size);
-		DrawVertices(glm::vec3(centre,0), boxPrimitive->vertices, boxPrimitive->count, glm::vec4(color, 1));
+		DrawVertices(glm::vec3(centre,0), boxPrimitive->vertices, boxPrimitive->count, gizmoColor);
 	}
 
-	void Gizmos::DrawCircle(glm::vec2 centre, float radius, glm::vec3 color) {
+	void Gizmos::DrawCircle(glm::vec2 centre, float radius) {
 		GizmoPrimitive* boxPrimitive = GizmoPrimitives::Circle(radius, 50);
-		DrawVertices(glm::vec3(centre, 0), boxPrimitive->vertices, boxPrimitive->count, glm::vec4(color, 1));
+		DrawVertices(glm::vec3(centre, 0), boxPrimitive->vertices, boxPrimitive->count, gizmoColor);
 	}
 }

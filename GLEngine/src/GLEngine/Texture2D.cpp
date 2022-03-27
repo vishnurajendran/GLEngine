@@ -16,8 +16,4 @@ namespace GLengine {
 		}
 
 	}
-
-	void Texture2D::Bind() {
-
-	}
 }

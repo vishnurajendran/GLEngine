@@ -20,6 +20,10 @@ namespace GLengine {
 			rendererAPI->DrawNonIndexed(vArrray, drawPrimitive);
 		}
 
+		inline static void EnableDepthTest(bool enable) {
+			rendererAPI->EnableDepthTest(enable);
+		}
+
 		inline static void Initialise() {
 			rendererAPI->Initialise();
 		}

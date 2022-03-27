@@ -1,6 +1,7 @@
 #pragma once
-#include "GLEngine/Engine.h"
-#include "GLEngine/RenderCommand.h"
+#include <GLEngine/Engine.h>
+#include <GLEngine/RenderCommand.h>
+#include <GLEngine/Renderer.h>
 
 namespace GLengine {
 	void framebuffer_size_callback(GLFWwindow* window, int width, int height)
@@ -84,7 +85,7 @@ namespace GLengine {
 		glfwPollEvents();
 		glfwSwapBuffers(window);
 		
-		RenderCommand::ClearColor(glm::vec4(0.2f, 0.2f, 0.2f, 1));
+		RenderCommand::ClearColor(glm::vec4(0.1f, 0.1f, 0.1f, 1));
 		RenderCommand::Clear();
 	
 		if (!ViewManager::HasActiveCamera()) {
@@ -93,6 +94,8 @@ namespace GLengine {
 		}
 
 		GameObjectManager::UpdateGameObjects();
+
+		Renderer::Render();
 	}
 
 	void Engine::Quit() {

@@ -57,7 +57,8 @@ namespace GLengine {
 	}
 
 	void BoxCollider2D::OnDrawGizmo() {
-		Gizmos::DrawBox(GetTransform()->position, ((BoxBounds*)bounds)->worldSize, glm::vec3(0, 1, 0));
+		Gizmos::SetGizmoColor(glm::vec4(1, 0, 0, 0));
+		Gizmos::DrawBox(GetTransform()->position, ((BoxBounds*)bounds)->worldSize);
 	}
 
 #pragma endregion
@@ -75,7 +76,8 @@ namespace GLengine {
 
 	void CircleCollider2D::OnDrawGizmo() {
 		//need to add draw circle
-		Gizmos::DrawCircle(GetTransform()->position, ((CircleBounds*)bounds)->worldRadius, glm::vec3(0, 1, 0));
+		Gizmos::SetGizmoColor(glm::vec4(1, 0, 0, 0));
+		Gizmos::DrawCircle(GetTransform()->position, ((CircleBounds*)bounds)->worldRadius);
 	}
 
 #pragma endregion

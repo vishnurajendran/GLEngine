@@ -1,5 +1,6 @@
 #include<GLEngine/OpenGL/OpenGLRendererAPI.h>
 #include<glad/glad.h>
+#include <GLEngine/Debugging.h>
 
 namespace GLengine {
 	
@@ -15,6 +16,13 @@ namespace GLengine {
 		glEnable(GL_DEPTH_TEST);
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	}
+
+	void OpenGLRendererAPI::EnableDepthTest(bool enable) {
+		if (enable)
+			glEnable(GL_DEPTH_TEST);
+		else
+			glDisable(GL_DEPTH_TEST);
 	}
 
 	GLenum GetGLDrawPrimitive(RendererAPI::RenderPrimitive primitive) {

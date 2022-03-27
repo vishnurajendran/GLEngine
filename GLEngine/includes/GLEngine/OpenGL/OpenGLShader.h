@@ -14,6 +14,7 @@ namespace GLengine {
 		~OpenGLShader();
 		void CompileShaders(std::string source);
 		void UseShader();
+		void Unbind();
 		void SetBool(const char* attribName, bool value);
 		void SetInt(const char* attribName, int value);
 		void SetFloat(const char* attribName, float value);

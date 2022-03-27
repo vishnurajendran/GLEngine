@@ -27,7 +27,6 @@ namespace GLengine {
 	}
 
 	void Sprite2D::SetTransformationMatrix() {
-
 		glm::mat4 view = ViewManager::GetViewMatrix();
 		glm::mat4 projection = ViewManager::GetProjectionMatrix();
 		view = glm::translate(view, GetTransform()->position);
@@ -38,7 +37,6 @@ namespace GLengine {
 
 	void Sprite2D::DrawSprite() {
 		GetTransform()->UpdateVectors();
-		shape->PrepareToDraw();
 		SetTransformationMatrix();
 		shape->Draw();
 	}

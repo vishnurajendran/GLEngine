@@ -22,6 +22,7 @@ namespace GLengine {
 		static Shader* CreateShader(std::string shaderSource);
 		virtual void CompileShaders(std::string source)=0;
 		virtual void UseShader() = 0;
+		virtual void Unbind() = 0;
 		virtual void SetBool(const char* attribName, bool value) = 0;
 		virtual void SetInt(const char* attribName, int value) = 0;
 		virtual void SetFloat(const char* attribName, float value) = 0;

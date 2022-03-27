@@ -21,6 +21,7 @@ namespace GLengine  {
 		virtual void SetClearColor(glm::vec4 color) = 0;
 		virtual void DrawIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive) = 0;
 		virtual void DrawNonIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive) = 0;
+		virtual void EnableDepthTest(bool enable) = 0;
 
 		inline static API GetAPI() { return api; }
 	private:
