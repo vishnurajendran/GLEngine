@@ -19,6 +19,7 @@ class BasicExampleGame :public GLengine::Game {
 	GLengine::Sprite2D* birdSprite;
 	GLengine::GameObject* bgGO;
 	GLengine::GameObject* bird;
+	GLengine::GameObject* musicSource;
 	BasicExampleComponent* example;
 public:
 	void Start();

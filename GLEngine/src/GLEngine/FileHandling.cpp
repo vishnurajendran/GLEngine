@@ -60,6 +60,11 @@ namespace GLengine {
         return fs::exists(path);
     }
 
+    //quick hack to check if file exists
+    bool FileExists(const char* path) {
+        return fs::exists(path);
+    }
+
     void MakeDirectory(const char* path) {
         fs::create_directory(path);
     }

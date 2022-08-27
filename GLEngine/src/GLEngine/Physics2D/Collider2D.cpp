@@ -1,5 +1,6 @@
 #include <GLEngine/Physics2D/Collider2D.h>
 #include <GLEngine/Physics2D/Collision.h>
+#include <GLEngine/Color.h>
 #include <GLEngine/Gizmos.h>
 
 namespace GLengine {
@@ -38,7 +39,6 @@ namespace GLengine {
 		CollisionManager::RemoveFromColliders(this);
 	}
 
-
 #pragma endregion
 
 #pragma region BoxCollider2D
@@ -47,18 +47,19 @@ namespace GLengine {
 		((BoxBounds*)bounds)->size = size;
 	}
 
+	void BoxCollider2D::Start() {
+		gizmoInstance = Gizmos::GetGizmoBoxInstance(GetTransform()->position, ((BoxBounds*)bounds)->worldSize, Color::Red());
+	}
+
 	void BoxCollider2D::Update() {
 		Collider2D::Update();
 		glm::vec2 boundsSize = ((BoxBounds*)bounds)->size;
 		glm::vec3 locScale = GetTransform()->localScale;
 		((BoxBounds*)bounds)->worldSize = glm::vec2(boundsSize.x* locScale.x, boundsSize.y * locScale.y);
-		
-		//LogInfo((std::to_string(((BoxBounds*)bounds)->worldSize.x) + "," + std::to_string(((BoxBounds*)bounds)->worldSize.y)).c_str());
 	}
 
 	void BoxCollider2D::OnDrawGizmo() {
-		Gizmos::SetGizmoColor(glm::vec4(1, 0, 0, 0));
-		Gizmos::DrawBox(GetTransform()->position, ((BoxBounds*)bounds)->worldSize);
+		gizmoInstance->Draw();
 	}
 
 #pragma endregion
@@ -74,10 +75,12 @@ namespace GLengine {
 		((CircleBounds*)bounds)->worldRadius = (((CircleBounds*)bounds)->radius * GetTransform()->localScale.x);
 	}
 
+	void CircleCollider2D::Start() {
+		gizmoInstance = Gizmos::GetGizmoCircleInstance(GetTransform()->position, ((CircleBounds*)bounds)->worldRadius, Color::Red());
+	}
+
 	void CircleCollider2D::OnDrawGizmo() {
-		//need to add draw circle
-		Gizmos::SetGizmoColor(glm::vec4(1, 0, 0, 0));
-		Gizmos::DrawCircle(GetTransform()->position, ((CircleBounds*)bounds)->worldRadius);
+		gizmoInstance->Draw();
 	}
 
 #pragma endregion

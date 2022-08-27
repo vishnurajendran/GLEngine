@@ -1,5 +1,6 @@
 #pragma once
 #include <GLEngine/Engine.h>
+#include <GLEngine/GUI.h>
 #include <GLEngine/RenderCommand.h>
 #include <GLEngine/Renderer.h>
 
@@ -14,6 +15,9 @@ namespace GLengine {
 		ApplicationProperties::ScreenWidth = width;
 		
 	}
+
+	float screenWidth = GLengine::ApplicationProperties::ScreenWidth;
+	float screenHeight = GLengine::ApplicationProperties::ScreenHeight;
 
 	void Engine::Initialise(std::string applicationName, bool fullscreen, int height, int width, int fps) {
 
@@ -73,12 +77,14 @@ namespace GLengine {
 
 		Input::Init(window);
 		CollisionManager::StartCollisionCheckThread();
+		AudioSystem::Initialise();
 		LogInfo("Enigne Ready");
 		CloseSection();
 		AddSection(" Runtime ");
 		RenderCommand::Initialise();
 	}
 
+	int iter = 0;
 	void Engine::Run() {
 
 		Time::Update();
@@ -87,14 +93,13 @@ namespace GLengine {
 		
 		RenderCommand::ClearColor(glm::vec4(0.1f, 0.1f, 0.1f, 1));
 		RenderCommand::Clear();
-	
+
 		if (!ViewManager::HasActiveCamera()) {
 			LogWarning("No active cameras detected");
 			return;
 		}
 
 		GameObjectManager::UpdateGameObjects();
-
 		Renderer::Render();
 	}
 
@@ -107,6 +112,7 @@ namespace GLengine {
 		CollisionManager::StopCollisionCheckThread();
 		GameObjectManager::Cleanup();
 		ResourceManager::CleanAll();
+		AudioSystem::Cleanup();
 		LogInfo("Enigne Shutting down");
 		CloseSection();
 	}

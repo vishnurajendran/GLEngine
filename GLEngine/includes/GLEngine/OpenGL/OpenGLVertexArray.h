@@ -6,6 +6,7 @@ namespace GLengine {
 		std::vector<VertexBuffer*>* vBuffers;
 		IndexBuffer* iBuffer;
 	public:
+		~OpenGLVertexArray();
 		OpenGLVertexArray();
 		void AddVertexBuffer(VertexBuffer* vBuffer) override;
 		void SetIndexBuffer(IndexBuffer* iBuffer) override;

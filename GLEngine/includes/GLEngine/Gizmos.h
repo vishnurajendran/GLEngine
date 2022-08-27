@@ -1,17 +1,31 @@
 #pragma once
 #include <GLEngine/Core/Core.h>
 #include <GLEngine/Rendering.h>
+#include <GLEngine/Color.h>
 #include <string>
 #include <glm/glm.hpp>
+#include <GLEngine/Renderer.h>
 
 
 namespace GLengine {
 
 	struct GizmoPrimitive {
 	public:
-		GizmoPrimitive(float* vertices, int count);
+		GizmoPrimitive(std::string name, float* vertices, int count);
+		std::string name;
 		float* vertices;
 		int count;
+	};
+
+	class GizmoInstance {
+		RenderRequest* request;
+	public:
+		inline GizmoInstance(RenderRequest* request) { this->request = request; }
+		inline ~GizmoInstance() { delete request; }
+		inline void Destroy() { delete this; }
+		inline void Draw() {
+			Renderer::Submit(RenderLayer::Debug, request);
+		}
 	};
 
 	class GizmoPrimitives {
@@ -24,12 +38,10 @@ namespace GLengine {
 		static std::string shaderId;
 		static bool isInitialised;
 		static Shader* gizmoShader;
-		static glm::vec4 gizmoColor;
 		static void Init();
-		static void DrawVertices(glm::vec3 position, float* vertices,int vertRows, glm::vec4 color);
+		static GizmoInstance* PrepareGizmoInstance(glm::vec3 position,GizmoPrimitive* primitive, glm::vec4 color);
 	public:
-		static void SetGizmoColor(glm::vec4 color);
-		static void DrawBox(glm::vec2 centre, glm::vec2 size);
-		static void DrawCircle(glm::vec2 centre, float radius);
+		static GizmoInstance* GetGizmoBoxInstance(glm::vec2 centre, glm::vec2 size, Color* color);
+		static GizmoInstance* GetGizmoCircleInstance(glm::vec2 centre, float radius, Color* color);
 	};
 }

@@ -25,7 +25,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -49,7 +49,9 @@
     <IntDir>$(SolutionDir)Bin-int\$(ProjectName)\$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(ProjectName)\$(Configuration)\$(Platform)</OutDir>
+    <IntDir>$(SolutionDir)Bin-int\$(ProjectName)\$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -63,7 +65,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)$(ProjectName)\Additional Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;opengl32.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -71,22 +73,30 @@
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>GLENGINE_PLATFORM_WINDOWS;BUILD_DLL;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)$(ProjectName)\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PerUserRedirection>true</PerUserRedirection>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(ProjectName)\Additional Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;opengl32.lib;freetype.lib;irrKlang.lib;irrKlang.dll;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="includes\GLEngine\Color.h" />
     <ClInclude Include="includes\glad\glad.h" />
     <ClInclude Include="includes\GLEngine.h" />
     <ClInclude Include="includes\GLEngine\2D.h" />
     <ClInclude Include="includes\GLEngine\Buffers.h" />
+    <ClInclude Include="includes\GLEngine\AudioSystem\AudioSystem.h" />
     <ClInclude Include="includes\GLEngine\Core\Component.h" />
     <ClInclude Include="includes\GLEngine\Core\Core.h" />
     <ClInclude Include="includes\GLEngine\Core\GameObject.h" />
@@ -101,6 +111,7 @@
     <ClInclude Include="includes\GLEngine\FileHandling.h" />
     <ClInclude Include="includes\GLEngine\Game.h" />
     <ClInclude Include="includes\GLEngine\Gizmos.h" />
+    <ClInclude Include="includes\GLEngine\GUI.h" />
     <ClInclude Include="includes\GLEngine\HelperDefinitions.h" />
     <ClInclude Include="includes\GLEngine\InputHandling.h" />
     <ClInclude Include="includes\GLEngine\Material.h" />
@@ -364,18 +375,44 @@
     <ClInclude Include="includes\glm\vec3.hpp" />
     <ClInclude Include="includes\glm\vec4.hpp" />
     <ClInclude Include="includes\glm\vector_relational.hpp" />
+    <ClInclude Include="includes\irrKlang\ik_ESoundEngineOptions.h" />
+    <ClInclude Include="includes\irrKlang\ik_ESoundOutputDrivers.h" />
+    <ClInclude Include="includes\irrKlang\ik_EStreamModes.h" />
+    <ClInclude Include="includes\irrKlang\ik_IAudioRecorder.h" />
+    <ClInclude Include="includes\irrKlang\ik_IAudioStream.h" />
+    <ClInclude Include="includes\irrKlang\ik_IAudioStreamLoader.h" />
+    <ClInclude Include="includes\irrKlang\ik_IFileFactory.h" />
+    <ClInclude Include="includes\irrKlang\ik_IFileReader.h" />
+    <ClInclude Include="includes\irrKlang\ik_IRefCounted.h" />
+    <ClInclude Include="includes\irrKlang\ik_irrKlangTypes.h" />
+    <ClInclude Include="includes\irrKlang\ik_ISound.h" />
+    <ClInclude Include="includes\irrKlang\ik_ISoundDeviceList.h" />
+    <ClInclude Include="includes\irrKlang\ik_ISoundEffectControl.h" />
+    <ClInclude Include="includes\irrKlang\ik_ISoundEngine.h" />
+    <ClInclude Include="includes\irrKlang\ik_ISoundMixedOutputReceiver.h" />
+    <ClInclude Include="includes\irrKlang\ik_ISoundSource.h" />
+    <ClInclude Include="includes\irrKlang\ik_ISoundStopEventReceiver.h" />
+    <ClInclude Include="includes\irrKlang\ik_IVirtualRefCounted.h" />
+    <ClInclude Include="includes\irrKlang\ik_SAudioStreamFormat.h" />
+    <ClInclude Include="includes\irrKlang\ik_vec3d.h" />
+    <ClInclude Include="includes\irrKlang\irrKlang.h" />
     <ClInclude Include="includes\KHR\khrplatform.h" />
     <ClInclude Include="includes\stb_image.h" />
     <ClInclude Include="includes\GLEngine\VertexArray.h" />
     <ClInclude Include="includes\GLEngine\Texture2D.h" />
+    <ClInclude Include="includes\GLEngine\FontFamily.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="Additional Libraries\glfw3.lib" />
     <Library Include="Additional Libraries\glfw3dll.lib" />
     <Library Include="Additional Libraries\glfw3_mt.lib" />
+    <Library Include="Additional Libraries\irrKlang.lib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Additional Libraries\glfw3.dll" />
+    <None Include="Additional Libraries\ikpFlac.dll" />
+    <None Include="Additional Libraries\ikpMP3.dll" />
+    <None Include="Additional Libraries\irrKlang.dll" />
     <None Include="includes\glm\detail\func_common.inl" />
     <None Include="includes\glm\detail\func_common_simd.inl" />
     <None Include="includes\glm\detail\func_exponential.inl" />
@@ -513,6 +550,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="includes\glm\detail\glm.cpp" />
+    <ClCompile Include="src\GLEngine\AudioSystem\AudioSystem.cpp" />
+    <ClCompile Include="src\GLEngine\FontFamily.cpp" />
     <ClCompile Include="src\GLEngine\Gizmos.cpp" />
     <ClCompile Include="src\GLEngine\2D.cpp" />
     <ClCompile Include="src\GLEngine\Buffers.cpp" />
@@ -527,6 +566,7 @@
     <ClCompile Include="src\GLEngine\Engine.cpp" />
     <ClCompile Include="src\GLEngine\FileHandling.cpp" />
     <ClCompile Include="src\GLEngine\Game.cpp" />
+    <ClCompile Include="src\GLEngine\GUI.cpp" />
     <ClCompile Include="src\GLEngine\InputHandling.cpp" />
     <ClCompile Include="src\GLEngine\Material.cpp" />
     <ClCompile Include="src\GLEngine\OpenGL\OpenGLBuffers.cpp" />

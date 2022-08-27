@@ -16,8 +16,8 @@ namespace GLengine {
 			rendererAPI->DrawIndexed(vArrray, drawPrimitive);
 		}
 
-		inline static void DrawNonIndexed(VertexArray* vArrray, RendererAPI::RenderPrimitive drawPrimitive) {
-			rendererAPI->DrawNonIndexed(vArrray, drawPrimitive);
+		inline static void DrawNonIndexed(VertexArray* vArrray, RendererAPI::RenderPrimitive drawPrimitive, int rows) {
+			rendererAPI->DrawNonIndexed(vArrray, drawPrimitive, rows);
 		}
 
 		inline static void EnableDepthTest(bool enable) {

@@ -180,7 +180,7 @@ namespace GLengine {
 		}
 
 		std::cout << msg;
-
+		
 		if (!loggerInitialised)
 		{
 			std::cout << "Logger Not initialised" << std::endl;

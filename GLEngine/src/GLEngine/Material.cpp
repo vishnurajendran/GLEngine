@@ -8,14 +8,14 @@
 
 namespace GLengine {
 
+	Material::~Material() {
+		Cleanup();
+		shader = nullptr;
+		textures = nullptr;
+	}
+
 	Material::Material(Shader* shaderToUse, Texture2D* texturesToUse, int texArraySize=0)
 	{
-		intAttribMap = new std::map<std::string, int>();
-		floatAttribMap = new std::map<std::string, float>();
-		boolAttribMap = new std::map<std::string, bool>();
-		mat4AttribMap = new std::map<std::string, glm::mat4>();
-		uniform4AttribMap = new std::map<std::string, glm::vec4>();
-
 		shader = shaderToUse;
 		textures = texturesToUse;
 		lenOfTex = texArraySize;
@@ -30,50 +30,50 @@ namespace GLengine {
 	}
 
 	void Material::Cleanup() {
-		intAttribMap->clear();
-		floatAttribMap->clear();
-		boolAttribMap->clear();
-		mat4AttribMap->clear();
-		uniform4AttribMap->clear();
+		intAttribMap.clear();
+		floatAttribMap.clear();
+		boolAttribMap.clear();
+		mat4AttribMap.clear();
+		uniform4AttribMap.clear();
 	}
 
 
 	void Material::CacheIntAttrib(std::string name, int value) {
-		intAttribMap->insert({ name, value });
+		intAttribMap.insert({ name, value });
 	}
 	void Material::CacheFloatAttrib(std::string name, float value) {
-		floatAttribMap->insert({ name, value });
+		floatAttribMap.insert({ name, value });
 	}
 	void Material::CacheBoolAttrib(std::string name, bool value) {
-		boolAttribMap->insert({ name, value });
+		boolAttribMap.insert({ name, value });
 	}
 	void Material::CacheMatrix4fAttrib(std::string name, glm::mat4 value) {
-		mat4AttribMap->insert({ name, value });
+		mat4AttribMap.insert({ name, value });
 	}
 	void Material::CacheUniform4fAttrib(std::string name, glm::vec4 value) {
-		uniform4AttribMap->insert({ name, value });
+		uniform4AttribMap.insert({ name, value });
 	}
 
 	void Material::ApplyShaderAttribs() {
 		
 		shader->UseShader();
-		for (auto attrib : *intAttribMap) {
+		for (auto attrib : intAttribMap) {
 			shader->SetInt(attrib.first.c_str(), attrib.second);
 		}
 
-		for (auto attrib : *floatAttribMap) {
+		for (auto attrib : floatAttribMap) {
 			shader->SetFloat(attrib.first.c_str(), attrib.second);
 		}
 
-		for (auto attrib : *boolAttribMap) {
+		for (auto attrib : boolAttribMap) {
 			shader->SetBool(attrib.first.c_str(), attrib.second);
 		}
 
-		for (auto attrib : *mat4AttribMap) {
+		for (auto attrib : mat4AttribMap) {
 			shader->SetMatrix4f(attrib.first.c_str(), glm::value_ptr(attrib.second));
 		}
 
-		for (auto attrib : *uniform4AttribMap) {
+		for (auto attrib : uniform4AttribMap) {
 			shader->SetUniform4f(attrib.first.c_str(), attrib.second);
 		}
 

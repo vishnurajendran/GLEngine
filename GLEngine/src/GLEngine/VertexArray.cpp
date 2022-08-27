@@ -8,4 +8,14 @@ namespace GLengine {
 			case RendererAPI::API::OpenGL: return new OpenGLVertexArray();
 		}
 	}
+
+	void VertexArray::Delete(VertexArray* vArray) {
+		switch (RenderSettings::GetRenderAPI()) {
+		case RendererAPI::API::None:
+			break;
+		case RendererAPI::API::OpenGL:
+			delete (OpenGLVertexArray*)vArray;
+			break;
+		}
+	}
 }

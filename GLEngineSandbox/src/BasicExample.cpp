@@ -61,10 +61,17 @@ void BasicExampleGame::Start() {
 	bird->transform.position = glm::vec3(0.0f, 0.0f, 0.1f);
 	bird->AttachComponent(birdSprite);
 	bird->AttachComponent(example);
+
+	//Adding Music
+	musicSource = new GLengine::GameObject("Music");
+	GLengine::AudioSource* source = new GLengine::AudioSource();
+	musicSource->AttachComponent(source);
+	source->SetClip(GLengine::ResourceManager::LoadClip("basic.mp3"));
+	source->Play();
 }
 
 void BasicExampleGame::Loop() {
-
+		
 }
 
 void BasicExampleGame::Exit() {

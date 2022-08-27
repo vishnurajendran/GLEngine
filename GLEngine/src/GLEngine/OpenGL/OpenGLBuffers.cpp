@@ -3,16 +3,20 @@
 #include <GLEngine/Debugging.h>
 
 namespace GLengine {
-	OpenGLVertexBuffer::OpenGLVertexBuffer(float* vertices, unsigned int count) {
+	OpenGLVertexBuffer::OpenGLVertexBuffer(float* vertices, unsigned int count, bool isStatic) {
+		vertMemory = vertices;
 		length = count;
 		glGenBuffers(1, &bufferId);
 		glBindBuffer(GL_ARRAY_BUFFER, bufferId);
-		glBufferData(GL_ARRAY_BUFFER, count * sizeof(float), vertices, GL_STATIC_DRAW);
+		glBufferData(GL_ARRAY_BUFFER, count * sizeof(float), vertices, isStatic?GL_STATIC_DRAW:GL_DYNAMIC_DRAW);
 	}
 	
 	OpenGLVertexBuffer::~OpenGLVertexBuffer() {
 		Unbind();
 		glDeleteBuffers(1, &bufferId);
+		if (vertMemory != nullptr) {
+			delete[] vertMemory;
+		}
 	}
 
 	void OpenGLVertexBuffer::Bind() {
@@ -32,6 +36,7 @@ namespace GLengine {
 	}
 
 	OpenGLIndexBuffer::OpenGLIndexBuffer(unsigned int* indices, unsigned int count) {
+		indexMemory = indices;
 		length = count;
 		glGenBuffers(1, &bufferId);
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, bufferId);
@@ -39,6 +44,11 @@ namespace GLengine {
 	}
 
 	OpenGLIndexBuffer::~OpenGLIndexBuffer() {
+		LogWarning("DELETING IARRAY");
+		Unbind();
+		if (indexMemory != nullptr)
+			delete[] indexMemory;
+
 		glDeleteBuffers(1, &bufferId);
 	}
 

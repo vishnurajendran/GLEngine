@@ -22,6 +22,7 @@ int main(int argc, char** argv) {
 		engine.Run();
 		game->Loop();
 	}
+
 	game->Exit();
 	delete game;
 	engine.Quit();

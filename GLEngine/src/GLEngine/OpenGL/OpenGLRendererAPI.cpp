@@ -3,7 +3,7 @@
 #include <GLEngine/Debugging.h>
 
 namespace GLengine {
-	
+
 	void OpenGLRendererAPI::Clear() {
 		glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 	}
@@ -43,8 +43,8 @@ namespace GLengine {
 		glDrawElements(primitive, vArray->GetIndexBuffer()->GetLength(), GL_UNSIGNED_INT, nullptr);
 	}
 
-	void OpenGLRendererAPI::DrawNonIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive) {
+	void OpenGLRendererAPI::DrawNonIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive, int rows) {
 		GLenum primitive = GetGLDrawPrimitive(drawPrimitive);
-		glDrawArrays(primitive, 0, vArray->GetVertexBuffers()[0]->GetLength()/3);
+		glDrawArrays(primitive, 0, vArray->GetVertexBuffers()[0]->GetLength()/rows);
 	}
 }

@@ -12,6 +12,7 @@ namespace GLengine {
 		virtual std::vector<VertexBuffer*> GetVertexBuffers() = 0;
 		virtual IndexBuffer* GetIndexBuffer() = 0;
 		static VertexArray* Create();
+		static void  Delete(VertexArray* vArray);
 	};
 }
 

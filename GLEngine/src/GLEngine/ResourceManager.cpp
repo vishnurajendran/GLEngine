@@ -11,35 +11,69 @@ namespace GLengine {
 	std::map<std::string, Shader*> ResourceManager::shaders;
 	std::map<std::string, Material*> ResourceManager::materials;
 	std::map<std::string, char*> ResourceManager::imageData;
-
+	//std::map<std::string, FontFamily*> ResourceManager::fonts;
 
 	int ResourceManager::autoTexKeyId = 0;
 	int ResourceManager::autoShaderKeyId = 0;
 	int ResourceManager::autoMatKeyId = 0;
 
+	const std::string PATH_TO_AUDIO = "Assets/Audio";
+
 #pragma region Create Methods
+	
+	std::string ResourceManager::CreateTexture2D(std::string path, int reqComp, TextureFormat texFormat, TextureWrap wrap, int texOrder) {
+		std::string autoName = "Tex_" + std::to_string(autoTexKeyId++);
+		CreateTexture2D(autoName, path, reqComp, texFormat, wrap, texOrder);
+		return autoName;
+	}
+	
 	void ResourceManager::CreateTexture2D(std::string name, std::string path, int reqComp, TextureFormat texFormat, TextureWrap wrap, int texOrder) {
 
 		if (textures.find(name) != textures.end()) {
-			LogWarning((std::string("[ Resource Manager ] ") + name + std::string(" exists in cache already. skipping texture generation")).c_str());
 			return;
 		}
 
 		textures.insert({ name, Texture2D::CreateTexture(path.c_str(), reqComp, texFormat, wrap, texOrder) });
 		textureKeys.push_back(name);
-		Log( ("[ Resource Manager ] Added " + name).c_str());
 	}
 
-	std::string ResourceManager::CreateTexture2D(std::string path, int reqComp, TextureFormat texFormat, TextureWrap wrap, int texOrder) {
+
+	std::string ResourceManager::CreateTexture2D(unsigned char* data, int width, int height, TextureFormat texFormat, TextureWrap wrap, int texOrder) {
 		std::string autoName = "Tex_" + std::to_string(autoTexKeyId++);
-		CreateTexture2D(autoName, path, reqComp, texFormat, wrap, texOrder);
+		CreateTexture2D(autoName, data, width, height, texFormat, wrap, texOrder);
+		return autoName;
+	}
+
+	void ResourceManager::CreateTexture2D(std::string name,unsigned char* data, int width, int height, TextureFormat texFormat, TextureWrap wrap, int texOrder) {
+
+		if (textures.find(name) != textures.end()) {
+			return;
+		}
+
+		textures.insert({ name, Texture2D::CreateTexture(data, width, height, texFormat, wrap, texOrder) });
+		textureKeys.push_back(name);
+	}
+
+	void ResourceManager::CreateEmptyTexture2D(std::string name, int width, int height, TextureFormat texFormat, TextureWrap wrap, int texOrder) {
+
+		if (textures.find(name) != textures.end()) {
+			return;
+		}
+
+		textures.insert({ name, Texture2D::CreateEmptyTexture(width, height, texFormat, wrap, texOrder) });
+		textureKeys.push_back(name);
+	
+	}
+
+	std::string ResourceManager::CreateEmptyTexture2D( int width, int height, TextureFormat texFormat, TextureWrap wrap, int texOrder) {
+		std::string autoName = "Tex_" + std::to_string(autoTexKeyId++);
+		CreateEmptyTexture2D(autoName, width, height, texFormat, wrap, texOrder);
 		return autoName;
 	}
 
 	void ResourceManager::CreateShader(std::string name, std::string shaderPath) {
 
 		if (shaders.find(name) != shaders.end()) {
-			LogWarning((std::string("[ Resource Manager ] ") + name + std::string(" exists in cache already. skipping shader generation")).c_str());
 			return;
 		}
 
@@ -57,7 +91,6 @@ namespace GLengine {
 	void ResourceManager::CreateMaterial(std::string name, Shader* shader, Texture2D* textures, int lenOfTex) {
 
 		if (materials.find(name) != materials.end()) {
-			LogWarning((std::string("[ Resource Manager ] ") + name + std::string(" exists in cache already. skipping material generation")).c_str());
 			return;
 		}
 
@@ -94,6 +127,30 @@ namespace GLengine {
 			return materials[name];
 		}
 		return NULL;
+	}
+
+	/*FontFamily* ResourceManager::GetFontFamily(std::string fontName) {
+		if (fonts.find(fontName) != fonts.end()) {
+			return fonts.at(fontName);
+		}
+		else {
+			FontFamily* font = new FontFamily(fontName);
+			fonts.insert({ fontName, font });
+			return font;
+		}
+	}*/
+
+	AudioClip* ResourceManager::LoadClip(std::string clipName) {
+		std::string path = PATH_TO_AUDIO + "/" + clipName;
+		if (!DirExists(PATH_TO_AUDIO.c_str())) {
+			MakeDirectory(PATH_TO_AUDIO.c_str());
+		}
+		if (!FileExists(path.c_str())) {
+			auto err = "ResourceManager::Clip " + clipName + " could not be found at path " + path;
+			Debug::LogError(err.c_str());
+			return nullptr;
+		}
+		return AudioSystem::GetClip(path);
 	}
 
 #pragma endregion

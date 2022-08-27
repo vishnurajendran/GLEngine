@@ -8,6 +8,6 @@ namespace GLengine {
 		void SetClearColor(glm::vec4 color) override;
 		void EnableDepthTest(bool enable) override;
 		void DrawIndexed(VertexArray* vArray, RendererAPI::RenderPrimitive drawPrimitive) override;
-		void DrawNonIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive) override;
+		void DrawNonIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive, int rows) override;
 	};
 }

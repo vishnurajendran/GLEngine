@@ -32,6 +32,7 @@ namespace GLengine {
 		static Camera* GetActiveCamera();
 		static glm::mat4 GetViewMatrix();
 		static glm::mat4 GetProjectionMatrix();
+		static glm::mat4 GetOrthoProjection();
 		static void AddToAvailableViews(Camera* camera);
 		static void RemoveFromAvailableViews(Camera* camera);
 		static void UpdateCameras();

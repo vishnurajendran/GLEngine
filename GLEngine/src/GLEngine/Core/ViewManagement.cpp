@@ -115,5 +115,11 @@ namespace GLengine {
 
 		return glm::mat4(1); //return identity matrix
 	}
+
+	glm::mat4 ViewManager::GetOrthoProjection() {
+		float scWidth = (float)ApplicationProperties::ScreenWidth;
+		float scHeight = (float)ApplicationProperties::ScreenHeight;
+		return glm::ortho(0.0f, scWidth, 0.0f, scHeight);
+	}
 }
 #pragma endregion

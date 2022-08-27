@@ -16,11 +16,16 @@ namespace GLengine  {
 			LINE_LOOP
 		};
 
+		enum class DrawType {
+			Static,
+			Dynamic
+		};
+
 		virtual void Clear() = 0;
 		virtual void Initialise() = 0;
 		virtual void SetClearColor(glm::vec4 color) = 0;
 		virtual void DrawIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive) = 0;
-		virtual void DrawNonIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive) = 0;
+		virtual void DrawNonIndexed(VertexArray* vArray, RenderPrimitive drawPrimitive, int rows) = 0;
 		virtual void EnableDepthTest(bool enable) = 0;
 
 		inline static API GetAPI() { return api; }

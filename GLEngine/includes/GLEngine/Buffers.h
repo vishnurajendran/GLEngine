@@ -86,7 +86,8 @@ namespace GLengine {
 		virtual void SetLayout(BufferLayout& layout) = 0;
 		virtual BufferLayout& GetLayout() = 0;
 		inline unsigned int GetLength() { return length; }
-		static VertexBuffer* CreateBuffer(float* vertices, unsigned int count);
+		static VertexBuffer* CreateBuffer(float* vertices, unsigned int count, bool isStatic=true);
+		static void DeleteBuffer(VertexBuffer* vBuffer);
 	};
 
 	class IndexBuffer {
@@ -97,5 +98,6 @@ namespace GLengine {
 		virtual void Unbind() = 0;
 		inline unsigned int GetLength() { return length; }
 		static IndexBuffer* CreateBuffer(unsigned int* indices, unsigned int count);
+		static void DeleteBuffer(IndexBuffer* iBuffer);
 	};
 }
