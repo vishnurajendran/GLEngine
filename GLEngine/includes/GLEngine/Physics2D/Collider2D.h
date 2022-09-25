@@ -7,7 +7,9 @@ namespace GLengine {
 	class GLENGINE_API Bounds2D {
 	public:
 		glm::vec3 centre;
+		glm::vec3 boundsScale;
 		virtual bool InsideBounds(glm::vec3 pos) = 0;
+		virtual void RecalculateBounds(glm::vec3 position, glm::vec3 scale) = 0;
 	};
 
 	class GLENGINE_API BoxBounds :public Bounds2D {
@@ -15,6 +17,7 @@ namespace GLengine {
 		glm::vec2 size = glm::vec2(0);
 		glm::vec2 worldSize = glm::vec2(0);
 		bool InsideBounds(glm::vec3 pos) override;
+		void RecalculateBounds(glm::vec3 position, glm::vec3 scale) override;
 	};
 
 	class GLENGINE_API CircleBounds :public Bounds2D {
@@ -22,6 +25,7 @@ namespace GLengine {
 		float radius=0;
 		float worldRadius = 0;
 		bool InsideBounds(glm::vec3 pos) override;
+		void RecalculateBounds(glm::vec3 position, glm::vec3 scale) override;
 	};
 
 	class GLENGINE_API Collider2D : public IComponent {

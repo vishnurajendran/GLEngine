@@ -11,22 +11,36 @@ namespace GLengine {
 		this->count = count;
 	}
 
+	void GizmoInstance::PrepareForDraw(glm::vec3 position,glm::vec3 scale, Color* color) {
 
-	GizmoPrimitive* GizmoPrimitives::Box(glm::vec2 size) {
+		glm::mat4 view = ViewManager::GetViewMatrix();
+		glm::mat4 projection = ViewManager::GetProjectionMatrix();
+		glm::mat4 model = glm::mat4(1.0f);
+
+		model = glm::scale(model, scale);
+		view = glm::translate(view, position);
+
+		request->material->SetMatrix4f("model", model);
+		request->material->SetMatrix4f("view", view);
+		request->material->SetMatrix4f("projection", projection);
+		request->material->SetUniform4f("lineColor", color->GetVec4());
+	}
+
+	GizmoPrimitive* GizmoPrimitives::Box() {
 		float* vert = new float[12]{
 			//top left					
-			-0.5f * size.x,0.5f * size.y,0,
+			-0.5f ,0.5f, 0,
 			//top right
-			 0.5f * size.x,0.5f * size.y, 0,
+			 0.5f ,0.5f, 0,
 			 //btm right									
-			 0.5f * size.x,-0.5f * size.y, 0,
+			 0.5f,-0.5f, 0,
 			 //btm left
-			 -0.5f * size.x,-0.5f * size.y, 0,
+			 -0.5f,-0.5f, 0,
 		};
 		return new GizmoPrimitive("Box", vert, 12);
 	}
 
-	GizmoPrimitive* GizmoPrimitives::Circle(float radius, int resolution) {
+	GizmoPrimitive* GizmoPrimitives::Circle(int resolution) {
 		float* verts = new float[resolution * 3];
 		int indx = 0;
 		int baseIndex = 0;
@@ -34,11 +48,10 @@ namespace GLengine {
 		float degToRad = 0.0174533;
 
 		int adDelta = 0;
-
 		for (int i = 0; i < resolution; i++)
 		{
-			float x = sin(degToRad * angle) * radius;
-			float y = cos(degToRad * angle) * radius;
+			float x = sin(degToRad * angle);
+			float y = cos(degToRad * angle);
 
 			verts[adDelta] = x;
 			verts[adDelta + 1] = y;
@@ -48,7 +61,6 @@ namespace GLengine {
 
 			angle += (360.0f / resolution);
 		}
-
 		return new GizmoPrimitive("Circle", verts, resolution * 3);
 	}
 
@@ -62,7 +74,7 @@ namespace GLengine {
 		gizmoShader = ResourceManager::GetShader(shaderId);
 	}
 
-	GizmoInstance* Gizmos::PrepareGizmoInstance(glm::vec3 position, GizmoPrimitive* primitive, glm::vec4 color) {
+	GizmoInstance* Gizmos::PrepareGizmoInstance(GizmoPrimitive* primitive) {
 		
 		if (!isInitialised)
 			Init();
@@ -73,31 +85,22 @@ namespace GLengine {
 		BufferLayout layout = {
 			{ShaderDataType::Float3, "a_Position", false}
 		};
-		
+
 		vBuffer->SetLayout(layout);
 		vArray->AddVertexBuffer(vBuffer);
-		glm::mat4 view = ViewManager::GetViewMatrix();
-		glm::mat4 projection = ViewManager::GetProjectionMatrix();
-		glm::mat4 model = glm::mat4(1.0f);
-		view = glm::translate(view,position);
-
-		gizmoMat->SetMatrix4f("model", model);
-		gizmoMat->SetMatrix4f("view", view);
-		gizmoMat->SetMatrix4f("projection", projection);
-		gizmoMat->SetUniform4f("lineColor", color);
 
 		RenderRequest* request = new RenderRequest("Gizmo_" + primitive->name, vArray, gizmoMat, RendererAPI::RenderPrimitive::LINE_LOOP, 0, false, false, true);
 		return new GizmoInstance(request);
 	}
 
-	GizmoInstance* Gizmos::GetGizmoBoxInstance(glm::vec2 centre, glm::vec2 size, Color* color) {
-		GizmoPrimitive* boxPrimitive = GizmoPrimitives::Box(size);
-		return PrepareGizmoInstance(glm::vec3(centre,0), boxPrimitive, color->GetVec4());
+	GizmoInstance* Gizmos::GetGizmoBoxInstance() {
+		GizmoPrimitive* boxPrimitive = GizmoPrimitives::Box();
+		return PrepareGizmoInstance(boxPrimitive);
 	}
 
 
-	GizmoInstance* Gizmos::GetGizmoCircleInstance(glm::vec2 centre, float radius, Color* color) {
-		GizmoPrimitive* circlePrimitive = GizmoPrimitives::Circle(radius, 50);
-		return PrepareGizmoInstance(glm::vec3(centre, 0), circlePrimitive, color->GetVec4());
+	GizmoInstance* Gizmos::GetGizmoCircleInstance() {
+		GizmoPrimitive* circlePrimitive = GizmoPrimitives::Circle(50);
+		return PrepareGizmoInstance(circlePrimitive);
 	}
 }

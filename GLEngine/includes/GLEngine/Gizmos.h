@@ -22,16 +22,19 @@ namespace GLengine {
 	public:
 		inline GizmoInstance(RenderRequest* request) { this->request = request; }
 		inline ~GizmoInstance() { delete request; }
-		inline void Destroy() { delete this; }
+		
+		void PrepareForDraw(glm::vec3 position, glm::vec3 scale, Color* color);
 		inline void Draw() {
 			Renderer::Submit(RenderLayer::Debug, request);
 		}
+		
+		inline void Destroy() { delete this; }
 	};
 
 	class GizmoPrimitives {
 	public:
-		static GizmoPrimitive* Box(glm::vec2 size);
-		static GizmoPrimitive* Circle(float radius, int resolution);
+		static GizmoPrimitive* Box();
+		static GizmoPrimitive* Circle(int resolution);
 	};
 
 	class GLENGINE_API Gizmos {
@@ -39,9 +42,9 @@ namespace GLengine {
 		static bool isInitialised;
 		static Shader* gizmoShader;
 		static void Init();
-		static GizmoInstance* PrepareGizmoInstance(glm::vec3 position,GizmoPrimitive* primitive, glm::vec4 color);
+		static GizmoInstance* PrepareGizmoInstance(GizmoPrimitive* primitive);
 	public:
-		static GizmoInstance* GetGizmoBoxInstance(glm::vec2 centre, glm::vec2 size, Color* color);
-		static GizmoInstance* GetGizmoCircleInstance(glm::vec2 centre, float radius, Color* color);
+		static GizmoInstance* GetGizmoBoxInstance();
+		static GizmoInstance* GetGizmoCircleInstance();
 	};
 }

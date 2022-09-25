@@ -11,14 +11,26 @@ namespace GLengine {
 		float yExtends = worldSize.y / 2;
 		bool inX = pos.x > (centre.x - xExtends) && pos.x < (centre.x + xExtends);
 		bool inY = pos.y > (centre.y - yExtends) && pos.y < (centre.y + yExtends);
-
 		return inX && inY;
+	}
+
+	void BoxBounds::RecalculateBounds(glm::vec3 position, glm::vec3 scale) {
+		centre = position;
+		worldSize = glm::vec2(size.x * scale.x, size.y * scale.y);
+		boundsScale = glm::vec3(size.x * scale.x, size.y * scale.y, scale.z);
 	}
 
 	bool CircleBounds::InsideBounds(glm::vec3 pos) {
 		float distAbs = glm::abs(glm::distance(centre, pos));
 		return distAbs < radius;
 	}
+
+	void CircleBounds::RecalculateBounds(glm::vec3 position, glm::vec3 scale) {
+		centre = position;
+		worldRadius = radius * scale.x;
+		boundsScale = radius * scale;
+	}
+
 #pragma endregion
 
 #pragma region Collider2D
@@ -42,23 +54,26 @@ namespace GLengine {
 #pragma endregion
 
 #pragma region BoxCollider2D
+
 	BoxCollider2D::BoxCollider2D(glm::vec2 size) {
 		bounds = new BoxBounds();
 		((BoxBounds*)bounds)->size = size;
+		((BoxBounds*)bounds)->worldSize = size;
 	}
 
 	void BoxCollider2D::Start() {
-		gizmoInstance = Gizmos::GetGizmoBoxInstance(GetTransform()->position, ((BoxBounds*)bounds)->worldSize, Color::Red());
+		Collider2D::Start();
+		gizmoInstance = Gizmos::GetGizmoBoxInstance();
 	}
 
 	void BoxCollider2D::Update() {
 		Collider2D::Update();
-		glm::vec2 boundsSize = ((BoxBounds*)bounds)->size;
-		glm::vec3 locScale = GetTransform()->localScale;
-		((BoxBounds*)bounds)->worldSize = glm::vec2(boundsSize.x* locScale.x, boundsSize.y * locScale.y);
+		bounds->RecalculateBounds(GetTransform()->position, GetTransform()->localScale);
+		gizmoInstance->PrepareForDraw(GetTransform()->position, bounds->boundsScale, Color::White());
 	}
 
 	void BoxCollider2D::OnDrawGizmo() {
+		Collider2D::OnDrawGizmo();
 		gizmoInstance->Draw();
 	}
 
@@ -68,18 +83,22 @@ namespace GLengine {
 	CircleCollider2D::CircleCollider2D(float radius) {
 		bounds = new CircleBounds();
 		((CircleBounds*)bounds)->radius = radius;
+		((CircleBounds*)bounds)->worldRadius = radius;
 	}
 
 	void CircleCollider2D::Update() {
 		Collider2D::Update();
-		((CircleBounds*)bounds)->worldRadius = (((CircleBounds*)bounds)->radius * GetTransform()->localScale.x);
+		bounds->RecalculateBounds(GetTransform()->position,GetTransform()->localScale);
+		gizmoInstance->PrepareForDraw(GetTransform()->position,bounds->boundsScale, Color::Yellow());
 	}
 
 	void CircleCollider2D::Start() {
-		gizmoInstance = Gizmos::GetGizmoCircleInstance(GetTransform()->position, ((CircleBounds*)bounds)->worldRadius, Color::Red());
+		Collider2D::Start();
+		gizmoInstance = Gizmos::GetGizmoCircleInstance();
 	}
 
 	void CircleCollider2D::OnDrawGizmo() {
+		Collider2D::OnDrawGizmo();
 		gizmoInstance->Draw();
 	}
 

@@ -50,14 +50,13 @@ namespace GLengine {
 	bool CollisionManager::CheckCollision(CircleCollider2D* col1, BoxCollider2D* col2) {
 		BoxBounds* b = (BoxBounds*)col2->bounds;
 		CircleBounds* c = (CircleBounds*)col1->bounds;
-		
 		// get center point circle first 
 		glm::vec2 center(col1->GetTransform()->position + c->worldRadius);
 		// calculate AABB info (center, half-extents)
 		glm::vec2 aabb_half_extents(b->worldSize.x / 2.0f, b->worldSize.y / 2.0f);
 		glm::vec2 aabb_center(
-			col1->GetTransform()->position.x + aabb_half_extents.x,
-			col1->GetTransform()->position.y + aabb_half_extents.y
+			col2->GetTransform()->position.x + aabb_half_extents.x,
+			col2->GetTransform()->position.y + aabb_half_extents.y
 		);
 		// get difference vector between both centers
 		glm::vec2 difference = center - aabb_center;
@@ -70,15 +69,15 @@ namespace GLengine {
 	}
 
 	bool CollisionManager::CheckCollisionAABB(Collider2D* col1, Collider2D* col2){
-		
+
 		if (dynamic_cast<BoxCollider2D*>(col1) != nullptr && dynamic_cast<BoxCollider2D*>(col2) != nullptr) {
 			return CheckCollision((BoxCollider2D*)col1, (BoxCollider2D*)col2);
 		}
 		else if (dynamic_cast<CircleCollider2D*>(col1) != nullptr && dynamic_cast<BoxCollider2D*>(col2) != nullptr) {
-			return CheckCollision((CircleCollider2D*)col2, (BoxCollider2D*)col1);
+			return CheckCollision((CircleCollider2D*)col1, (BoxCollider2D*)col2);
 		}
 		else if (dynamic_cast<BoxCollider2D*>(col1) != nullptr && dynamic_cast<CircleCollider2D*>(col2) != nullptr) {
-			return CheckCollision((CircleCollider2D*)col1, (BoxCollider2D*)col2);
+			return CheckCollision((CircleCollider2D*)col2, (BoxCollider2D*)col1);
 		}
 		else if (dynamic_cast<CircleCollider2D*>(col1) != nullptr && dynamic_cast<CircleCollider2D*>(col2) != nullptr) {
 			return CheckCollision((CircleCollider2D*)col1, (CircleCollider2D*)col2);
@@ -104,7 +103,7 @@ namespace GLengine {
 		long waitPeriod = (1.0f / collisonChkFreq)*1000;
 		LogInfo("[ Collision Manager ] Collision detection started");
 		while (collisionDetectionActive) {
-			
+
 			if (colliders.size() <= 1)
 				continue;
 
