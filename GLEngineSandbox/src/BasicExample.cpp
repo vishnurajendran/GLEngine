@@ -14,6 +14,11 @@ void BasicExampleComponent::Start() {
 	else {
 		GLengine::Log("Sprite2D Component not attached");
 	}
+
+	/*GLengine::Log("Loading Text Component");
+	GetGameObject()->AttachComponent(new GLengine::TextComponent());
+	textComp = GetGameObject()->GetAttachedComponent<GLengine::TextComponent>();
+	textComp->SetText("Hello World!");*/
 }
 
 void BasicExampleComponent::Update() {
@@ -27,7 +32,7 @@ void BasicExampleComponent::OnDestroy() {
 
 void BasicExampleComponent::OnCollide(GLengine::Collision2D* collision)
 {
-	GLengine::Log(("Collision detected between " + collision->thisCollider->GetGameObject()->name + " and " + collision->other->GetGameObject()->name).c_str());
+	//GLengine::Log(("Collision detected between " + collision->thisCollider->GetGameObject()->name + " and " + collision->other->GetGameObject()->name).c_str());
 }
 
 #pragma endregion
@@ -61,6 +66,8 @@ void BasicExampleGame::Start() {
 	bird->transform.position = glm::vec3(0.0f, 0.0f, 0.1f);
 	bird->AttachComponent(birdSprite);
 	bird->AttachComponent(example);
+
+	//Adding Text
 
 	//Adding Music
 	musicSource = new GLengine::GameObject("Music");

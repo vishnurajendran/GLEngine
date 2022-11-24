@@ -5,6 +5,7 @@
 class BasicExampleComponent :public GLengine::IComponent {
 	GLengine::Camera* activeCamera;
 	GLengine::Sprite2D* bird;
+	GLengine::TextComponent* textComp;
 public:
 
 	void Start();

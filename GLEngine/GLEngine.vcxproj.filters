@@ -870,13 +870,7 @@
     <ClInclude Include="includes\GLEngine\Material.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="includes\GLEngine\GUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="includes\GLEngine\Color.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\GLEngine\FontFamily.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="includes\GLEngine\AudioSystem\AudioSystem.h">
@@ -1460,13 +1454,19 @@
     <ClCompile Include="src\GLEngine\Material.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\GLEngine\FontFamily.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\GLEngine\GUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\GLEngine\AudioSystem\AudioSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\GLEngine\Text\Font.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\GLEngine\Text\TextComponent.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLEngine\Text\Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLEngine\Text\TextComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

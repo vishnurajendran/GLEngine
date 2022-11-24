@@ -23,16 +23,15 @@
 #include "GLEngine/2D.h"
 #include "GLEngine/Color.h"
 
-//GUI
-#include <GLEngine/FontFamily.h>
-#include <GLEngine/GUI.h>
-
 //Physics2D
 #include "GLEngine/Physics2D/Collider2D.h"
 #include "GLEngine/Physics2D/Collision.h"
 
 //Audio
 #include "GLEngine/AudioSystem/AudioSystem.h"
+
+//Text
+#include "GLEngine/Text/TextComponent.h"
 
 //Engine app include
 #include "GLEngine/Game.h"

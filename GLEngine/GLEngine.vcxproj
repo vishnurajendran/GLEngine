@@ -111,7 +111,6 @@
     <ClInclude Include="includes\GLEngine\FileHandling.h" />
     <ClInclude Include="includes\GLEngine\Game.h" />
     <ClInclude Include="includes\GLEngine\Gizmos.h" />
-    <ClInclude Include="includes\GLEngine\GUI.h" />
     <ClInclude Include="includes\GLEngine\HelperDefinitions.h" />
     <ClInclude Include="includes\GLEngine\InputHandling.h" />
     <ClInclude Include="includes\GLEngine\Material.h" />
@@ -400,7 +399,6 @@
     <ClInclude Include="includes\stb_image.h" />
     <ClInclude Include="includes\GLEngine\VertexArray.h" />
     <ClInclude Include="includes\GLEngine\Texture2D.h" />
-    <ClInclude Include="includes\GLEngine\FontFamily.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="Additional Libraries\glfw3.lib" />
@@ -549,9 +547,10 @@
     <None Include="includes\glm\gtx\wrap.inl" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="includes\GLEngine\Text\Font.h" />
+    <ClCompile Include="includes\GLEngine\Text\TextComponent.h" />
     <ClCompile Include="includes\glm\detail\glm.cpp" />
     <ClCompile Include="src\GLEngine\AudioSystem\AudioSystem.cpp" />
-    <ClCompile Include="src\GLEngine\FontFamily.cpp" />
     <ClCompile Include="src\GLEngine\Gizmos.cpp" />
     <ClCompile Include="src\GLEngine\2D.cpp" />
     <ClCompile Include="src\GLEngine\Buffers.cpp" />
@@ -566,7 +565,6 @@
     <ClCompile Include="src\GLEngine\Engine.cpp" />
     <ClCompile Include="src\GLEngine\FileHandling.cpp" />
     <ClCompile Include="src\GLEngine\Game.cpp" />
-    <ClCompile Include="src\GLEngine\GUI.cpp" />
     <ClCompile Include="src\GLEngine\InputHandling.cpp" />
     <ClCompile Include="src\GLEngine\Material.cpp" />
     <ClCompile Include="src\GLEngine\OpenGL\OpenGLBuffers.cpp" />
@@ -584,6 +582,8 @@
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\GLEngine\Shader.cpp" />
     <ClCompile Include="src\GLEngine\Texture2D.cpp" />
+    <ClCompile Include="src\GLEngine\Text\Font.cpp" />
+    <ClCompile Include="src\GLEngine\Text\TextComponent.cpp" />
     <ClCompile Include="src\GLEngine\VertexArray.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -22,11 +22,11 @@ namespace GLengine {
 	}
 
 	RenderRequest::~RenderRequest() {		
-		if (disposeVertsOnRender) {
+		if (disposeVertsOnRender && vArray != nullptr) {
 			VertexArray::Delete(vArray);
 		}
 
-		if (disposeMatOnRender)
+		if (disposeMatOnRender && material != nullptr)
 		{
 			delete material;
 		}

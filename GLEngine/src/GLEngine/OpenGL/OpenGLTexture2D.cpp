@@ -229,8 +229,6 @@ namespace GLengine {
 	}
 
 	void OpenGLTexture2D::SetTexturePixels(unsigned char* data, int offsetX,int offsetY, int width, int height) {
-		//PrintData(data, width * height, this->width * this->height);
-		glBindTexture(GL_TEXTURE_2D, texture);
 		glTexSubImage2D(GL_TEXTURE_2D, 0,offsetX,offsetY,width, height, GetGLTexFormat(format), GL_UNSIGNED_BYTE, data);
 		TryErrorCheck("TEX PIXEL SET ");
 	}

@@ -1,8 +1,8 @@
 #pragma once
 #include <GLEngine/Engine.h>
-#include <GLEngine/GUI.h>
 #include <GLEngine/RenderCommand.h>
 #include <GLEngine/Renderer.h>
+#include <GLEngine/Text/Font.h>
 
 namespace GLengine {
 	void framebuffer_size_callback(GLFWwindow* window, int width, int height)
