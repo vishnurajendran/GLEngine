@@ -8,7 +8,7 @@
 
 namespace GLengine {
 
-	struct CharacterInfo {
+	struct GLENGINE_API CharacterInfo {
 		float ax = 0; // advance.x
 		float ay = 0; // advance.y
 
@@ -21,7 +21,7 @@ namespace GLengine {
 		float tx = 0; // x offset of glyph in texture coordinates
 	};
 
-	class Font {
+	class GLENGINE_API Font {
 	private:
 		const std::string CONST_PATH = "Assets/Fonts/";
 		bool initialised = false;
